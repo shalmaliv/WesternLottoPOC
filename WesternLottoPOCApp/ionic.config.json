@@ -1,0 +1,8 @@
+{
+  "name": "WesternLottoPOCApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "da7356a8"
+}
