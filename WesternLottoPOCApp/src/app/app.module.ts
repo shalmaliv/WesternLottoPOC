@@ -10,11 +10,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LotteryPage } from "../pages/lottery/lottery";
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+    LotteryPage,
     ContactPage,
     HomePage,
     TabsPage
@@ -26,7 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    LotteryPage,
     ContactPage,
     HomePage,
     TabsPage
