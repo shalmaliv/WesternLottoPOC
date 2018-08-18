@@ -11,14 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LotteryPage } from "../pages/lottery/lottery";
-<<<<<<< HEAD
-import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
-import { BetSlipPage } from '../pages/bet-slip/bet-slip';
-
-=======
 import { BetSlipPage } from '../pages/bet-slip/bet-slip'
 import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
->>>>>>> 1de49b844704528cfeaa294786950c87a1330975
 
 @NgModule({
   declarations: [
@@ -26,10 +20,7 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     LotteryPage,
     ContactPage,
     HomePage,
-<<<<<<< HEAD
-=======
     BetSlipPage,
->>>>>>> 1de49b844704528cfeaa294786950c87a1330975
     TabsPage,
     BetSlipPage,
     
@@ -45,10 +36,7 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     LotteryPage,
     ContactPage,
     HomePage,
-<<<<<<< HEAD
-=======
     BetSlipPage,
->>>>>>> 1de49b844704528cfeaa294786950c87a1330975
     TabsPage,
     BetSlipPage,  
     LotteryDetailPage
