@@ -30,14 +30,8 @@ export class LotteryPage {
  }
 
  openBetSlipPage()
-<<<<<<< HEAD
- {
-   
-  this.navCtrl.push(BetSlipPage);
-=======
  {   
    this.navCtrl.push(BetSlipPage)
->>>>>>> 1de49b844704528cfeaa294786950c87a1330975
  }
 
  performclick(){
