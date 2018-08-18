@@ -10,7 +10,7 @@ import{ LotteryDetailPage } from '../pages/lottery-detail/lottery-detail'
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LotteryDetailPage;
+  rootPage:any = TabsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

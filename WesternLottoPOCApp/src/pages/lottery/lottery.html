@@ -15,7 +15,7 @@
       <ion-icon name="ios-arrow-down" item-end></ion-icon>
     </ion-list-header>
     
-    <ion-item *ngFor="let rapidGame of rapidGames">
+    <ion-item *ngFor="let rapidGame of rapidGames" (click)="performclick()">
       <ion-img src={{rapidGame.logoSrc}} style="background-color: transparent; height:40px; width:40px;" item-start></ion-img>
         <h2><b>{{rapidGame.name}}</b></h2>
         <p>{{rapidGame.description}}</p>
