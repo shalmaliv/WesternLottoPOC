@@ -20,7 +20,7 @@ export class LotteryPage {
   rapidGames = LotteryRapidGames;
   dailyGames = LotteryDailyGamesMain;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() 
@@ -37,7 +37,7 @@ export class LotteryPage {
  openBetSlipPage()
  {
    
-   this.navCtrl.push(BetSlipPage)
+  this.navCtrl.push(BetSlipPage);
  }
 
 }
