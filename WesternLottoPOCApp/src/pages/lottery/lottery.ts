@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BetSlipPage } from '../bet-slip/bet-slip'
 import { LotteryRapidGames, LotteryDailyGamesMain } from "./mock-lottery";
+import { LotteryDetailPage } from "../lottery-detail/lottery-detail";
 
 /**
  * Generated class for the LotteryPage page.
@@ -35,9 +36,13 @@ export class LotteryPage {
  }
 
  openBetSlipPage()
- {
-   
+ {   
    this.navCtrl.push(BetSlipPage)
  }
+
+ performclick(){
+      let self = this;
+      self.navCtrl.push(LotteryDetailPage)
+  }
 
 }
