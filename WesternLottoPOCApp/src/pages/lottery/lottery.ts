@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LotteryRapidGames, LotteryDailyGamesMain } from "./mock-lottery";
 
 /**
  * Generated class for the LotteryPage page.
@@ -14,6 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lottery.html',
 })
 export class LotteryPage {
+
+  rapidGames = LotteryRapidGames;
+  dailyGames = LotteryDailyGamesMain;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
