@@ -1,5 +1,8 @@
-import { LotteryModel } from "./lottery-model";
-import { LotteryMainModel } from "./lottery-main-model";
+
+
+import { LotteryModel } from "../../models/lottery-model";
+import { LotteryMainModel } from "../../models/lottery-main-model";
+import { LotteryTypeModel } from "../../models/lottery-type-model";
 
 export const LotteryRapidGames: LotteryModel[] = [
   { id: 11, name: 'Lotto 5/11', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/pick5.png" },
@@ -42,3 +45,14 @@ export const LotteryDailyGamesMain: LotteryMainModel[] = [
   { id: 29, name: 'Lotto 5/90-GHANA', lotteryList: LotteryDailyGames4},
   { id: 30, name: 'Lotto 5/90-INHOUSE', lotteryList: LotteryDailyGames5},
 ];
+
+export const LotteryRapidGamesMain: LotteryMainModel[] = [
+  { id: 33, name: 'Rapid Games', lotteryList: LotteryRapidGames},
+];
+
+
+export const LotteryTypes : LotteryTypeModel[]=[
+    { id: 1, name: 'RAPID GAMES',logoSrc: '../../assets/imgs/rapid-game.png', lotterySubList: LotteryRapidGamesMain},
+    { id: 2, name: 'DAILY GAMES',logoSrc: '../../assets/imgs/daily-game.png', lotterySubList: LotteryDailyGamesMain},
+];
+

@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LotteryPage } from "../pages/lottery/lottery";
+import { BetSlipPage } from '../pages/bet-slip/bet-slip'
 import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     LotteryPage,
     ContactPage,
     HomePage,
+    BetSlipPage,
     TabsPage,
     LotteryDetailPage
   ],
@@ -32,6 +34,7 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     LotteryPage,
     ContactPage,
     HomePage,
+    BetSlipPage,
     TabsPage,
     LotteryDetailPage
   ],
