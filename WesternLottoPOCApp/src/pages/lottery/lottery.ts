@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-<<<<<<< HEAD
 import { BetSlipPage } from '../bet-slip/bet-slip'
-=======
 import { LotteryRapidGames, LotteryDailyGamesMain } from "./mock-lottery";
->>>>>>> 8fae81f7a558ef212834fbe364091aa131e3eb47
 
 /**
  * Generated class for the LotteryPage page.
