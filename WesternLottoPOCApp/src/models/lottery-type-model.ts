@@ -4,5 +4,5 @@ export class LotteryTypeModel {
   id: number;
   name: string;
   logoSrc: string;
-  lotteryList : LotteryMainModel[];
+  lotterySubList : LotteryMainModel[];
 }

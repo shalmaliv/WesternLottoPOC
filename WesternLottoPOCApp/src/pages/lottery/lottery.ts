@@ -1,15 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BetSlipPage } from '../bet-slip/bet-slip'
-import { LotteryRapidGames, LotteryDailyGamesMain } from "./mock-lottery";
+import { LotteryTypes } from "./mock-lottery";
 import { LotteryDetailPage } from "../lottery-detail/lottery-detail";
-
-/**
- * Generated class for the LotteryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -18,8 +11,9 @@ import { LotteryDetailPage } from "../lottery-detail/lottery-detail";
 })
 export class LotteryPage {
 
-  rapidGames = LotteryRapidGames;
-  dailyGames = LotteryDailyGamesMain;
+  selected = 'RAPID GAMES';
+
+  lotteryGames = LotteryTypes;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -43,6 +37,12 @@ export class LotteryPage {
  performclick(){
       let self = this;
       self.navCtrl.push(LotteryDetailPage)
-  }
+ }
+
+ performHeaderClick(name){
+    let self = this;
+    self.selected = name;
+    console.log(name);
+ }
 
 }

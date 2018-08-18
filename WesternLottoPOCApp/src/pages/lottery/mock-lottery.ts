@@ -46,9 +46,13 @@ export const LotteryDailyGamesMain: LotteryMainModel[] = [
   { id: 30, name: 'Lotto 5/90-INHOUSE', lotteryList: LotteryDailyGames5},
 ];
 
+export const LotteryRapidGamesMain: LotteryMainModel[] = [
+  { id: 33, name: 'Rapid Games', lotteryList: LotteryRapidGames},
+];
+
 
 export const LotteryTypes : LotteryTypeModel[]=[
-    { id: 1, name: 'RAPID GAMES',logoSrc: '../../assets/imgs/rapid-game.png', lotteryList: LotteryDailyGamesMain},
-    { id: 2, name: 'DAILY GAMES',logoSrc: '../../assets/imgs/daily-game.png', lotteryList: LotteryDailyGamesMain},
-]
+    { id: 1, name: 'RAPID GAMES',logoSrc: '../../assets/imgs/rapid-game.png', lotterySubList: LotteryRapidGamesMain},
+    { id: 2, name: 'DAILY GAMES',logoSrc: '../../assets/imgs/daily-game.png', lotterySubList: LotteryDailyGamesMain},
+];
 
