@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BetSlipPage } from '../bet-slip/bet-slip'
 
 /**
  * Generated class for the LotteryPage page.
@@ -18,8 +19,20 @@ export class LotteryPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
+  ionViewDidLoad() 
+  {
     console.log('ionViewDidLoad LotteryPage');
   }
+
+ refreshPage()
+ {
+   console.log('Button Is Clicked')
+   this.ionViewDidLoad()
+ }
+
+ openBetSlipPage()
+ {
+   this.navCtrl.push(BetSlipPage)
+ }
 
 }
