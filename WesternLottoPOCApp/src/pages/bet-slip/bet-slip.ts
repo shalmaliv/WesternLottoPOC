@@ -13,9 +13,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-bet-slip',
   templateUrl: 'bet-slip.html',
 })
-export class BetSlipPage {
+export class BetSlipPage 
+{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController)
+  {
   }
 
   ionViewDidLoad() {

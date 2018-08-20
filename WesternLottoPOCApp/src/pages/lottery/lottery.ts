@@ -15,7 +15,7 @@ export class LotteryPage {
 
   lotteryGames = LotteryTypes;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() 
