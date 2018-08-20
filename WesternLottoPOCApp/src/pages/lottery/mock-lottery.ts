@@ -5,7 +5,7 @@ import { LotteryMainModel } from "../../models/lottery-main-model";
 import { LotteryTypeModel } from "../../models/lottery-type-model";
 
 export const LotteryRapidGames: LotteryModel[] = [
-  { id: 11, name: 'Lotto 5/11', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/pick5.png" },
+  { id: 11, name: 'Lotto 5/11', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/pick.png" },
   { id: 12, name: 'Keno', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/Keno.png" },
   { id: 13, name: 'Joker', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/Joker-left-logo.png" },
   { id: 14, name: 'Lucky 6', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/default.png" } 
