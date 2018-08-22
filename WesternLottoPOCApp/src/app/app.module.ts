@@ -22,6 +22,8 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     HomePage,
     BetSlipPage,
     TabsPage,
+    BetSlipPage,
+    
     LotteryDetailPage
   ],
   imports: [
@@ -36,6 +38,7 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
     HomePage,
     BetSlipPage,
     TabsPage,
+    BetSlipPage,  
     LotteryDetailPage
   ],
   providers: [

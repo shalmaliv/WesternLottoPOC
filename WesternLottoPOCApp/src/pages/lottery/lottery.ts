@@ -15,7 +15,7 @@ export class LotteryPage {
 
   lotteryGames = LotteryTypes;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewDidLoad() 
@@ -41,8 +41,15 @@ export class LotteryPage {
 
  performHeaderClick(name){
     let self = this;
-    self.selected = name;
-    console.log(name);
+
+    if(self.selected != name){
+        self.selected = name;
+    }else if(name == 'RAPID GAMES'){
+       self.selected = 'DAILY GAMES';
+    }else if(name == 'DAILY GAMES'){
+       self.selected = 'RAPID GAMES';
+    }
  }
+    
 
 }
