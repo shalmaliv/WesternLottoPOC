@@ -16,6 +16,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class BetSlipPage 
 {
 
+  testlist = ["a","b","c","d"];
+
   constructor(public navCtrl: NavController)
   {
   }
