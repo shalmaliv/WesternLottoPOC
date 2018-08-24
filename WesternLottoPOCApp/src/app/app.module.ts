@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LotteryPage } from "../pages/lottery/lottery";
 import { BetSlipPage } from '../pages/bet-slip/bet-slip'
 import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
+import { ApiProvider } from '../providers/api/api';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp,{tabsPlacement: 'top'})
+    IonicModule.forRoot(MyApp,{tabsPlacement: 'top'}),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,7 +47,8 @@ import { LotteryDetailPage } from '../pages/lottery-detail/lottery-detail';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiProvider
   ]
 })
 export class AppModule {}
