@@ -12,51 +12,51 @@
     <ion-card style="border: 2px solid #f47609;color: #000;background: #dcdcdc;">  
 
       <ion-list>
-        <ion-card-content style="background: #dcdcdc;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px">
-          <div *ngFor="let film of testlist" style="background: white;padding-left: 5px;padding-right: 5px">
-            <h2 item-start style="color: green;font-weight: 700;font-size: 14px;display: inline;">Lotto 5/11 - Spot 1</h2>
-              <ion-buttons style="display: inline; float: right">
-                <button style="float:right;background: white">
-                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwdJREFUeNqklU1ME1EQx6fL4ZlwWLi4B5MuMQQ8YOupLQcpCWqJEcsB6IXIxXhoKhw4mIY7N4+SNhBijCH1UCJETUgK8SMx1EhTkAAHRYoVlMiX1G6B7j7nLV1YugUBX/JPuvPe/KaZmTfPpMgS6JeiKEAp5fBnFcCGI/E2Yh8efmF5k9guQ1spgLBudzcs1Ltrpqw8ieL5cbRPM1fmX1RUpIMhPE9idivm7Wu+HBEAknhkE7WLojqx700i3ko+fPclsruT8qLEfJb+g0M51kbvBioBFnP/hJ5AinA7uDgvSwHmn+MY4NVL/ddDBCB1QuhhVXamYrIUYpx8eLnysqkXwekzgXMirifpNVnqVXk5eLEiD/k9BFYMDoSnPCkEIpTnScEA9p7lFWT6GZfB6+a7K6KGg0ITHVyVqCKP0w5Rv3eetoSX0C7RWLvZGEBopWOyFGVchI90tfFqV+gO2WiPCtakBRD2wZrG7vCGAK4BKYl7XaBM+MLYcluHD5hpx4R0CMICvBpdzrN9pf1OY3pIy9AW7odhrcc2iwbZmL8K+sAQIA/sKpx3EDvlGVmahZl2c+bIDiAW2j1xSrCadx/FtsxwcNza/gmTCxtGeyYBk3PbR/tlNkD1OjotAvWEl49JS34X6dPi20uLMtoa5g0FFag7bCze/PcTBnA/UwvKQW1zrJ6ow+lgERu0NZboDD/g8c1LcPGCFfxx/UEruJ28IStOVw3jxUDOpuve3xOiBWYFK4qxeLoi4yyixNAEDXRQu0Q4KovlX0G/s9D1F23UWVmoK8zU7qwwglHW7rmD649wpvJfT6/99+DC/k7P5AYX42pwpuqP980hOOvI5RtSA6tSCNNcrTEhu/tHg3Mox+dHVwP8KR8LYvUtjq1KAQQ7cpw9OJu7ugBMYvbbc2+HXYjAP545IOakuz8eScuSF8GijqEyTdoDjY+y+jjnFmcymap2fn9yvA722YMjHyzxeKIMb11pSZll/Yr9xoLH0zzVWCtGzwGMo980+u87oy9wHAd/BRgAUmp93qDEQKQAAAAASUVORK5CYII=" style="height: 23px; width: 23px;float:right">
-                 </button>
-              </ion-buttons>
-              <ion-list>
-                  <ion-row style="margin-top:20px">
-                      <ion-col style="flex-grow: 0;padding: 0px">
-                          <div class = "numberCircle">
-                            <div text-center>1</div> 
-                          </div>
-                       </ion-col>
-                       <ion-col style="flex-grow: 0;padding: 0px">
-                          <div class = "numberCircle">
-                            <div text-center> 2 </div>
-                          </div>
-                       </ion-col>
-                       <ion-col style="flex-grow: 0;padding: 0px">
-                          <div class = "numberCircle">
-                            <div text-center > 3 </div>
-                          </div>
-                       </ion-col>
-                       <ion-col style="flex-grow: 0;padding: 0px">
-                          <div class = "numberCircle">
-                            <div text-center > 4 </div>
-                          </div>
-                       </ion-col>
-                       <ion-col style="flex-grow: 0;padding: 0px">
-                          <div class = "numberCircle">
-                            <div text-center > 5 </div>
-                          </div>
-                       </ion-col>
-                  </ion-row>
-              </ion-list>
-              <td style="padding-top: 25px">
-                SETS<br>1
-              </td>
-              <td style="padding-left: 50px">
-                DRAWID<br>8449
-              </td>
-          </div>
-        </ion-card-content>
+        <ion-card-content *ngFor="let film of testlist" style="background: #dcdcdc;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px">
+        <div style="background: white;padding-left: 5px;padding-right: 5px">
+          <h2 item-start style="color: green;font-weight: 700;font-size: 14px;display: inline;">Lotto 5/11 - Spot 1</h2>
+            <ion-buttons style="display: inline; float: right">
+              <button style="float:right;background: white">
+                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwdJREFUeNqklU1ME1EQx6fL4ZlwWLi4B5MuMQQ8YOupLQcpCWqJEcsB6IXIxXhoKhw4mIY7N4+SNhBijCH1UCJETUgK8SMx1EhTkAAHRYoVlMiX1G6B7j7nLV1YugUBX/JPuvPe/KaZmTfPpMgS6JeiKEAp5fBnFcCGI/E2Yh8efmF5k9guQ1spgLBudzcs1Ltrpqw8ieL5cbRPM1fmX1RUpIMhPE9idivm7Wu+HBEAknhkE7WLojqx700i3ko+fPclsruT8qLEfJb+g0M51kbvBioBFnP/hJ5AinA7uDgvSwHmn+MY4NVL/ddDBCB1QuhhVXamYrIUYpx8eLnysqkXwekzgXMirifpNVnqVXk5eLEiD/k9BFYMDoSnPCkEIpTnScEA9p7lFWT6GZfB6+a7K6KGg0ITHVyVqCKP0w5Rv3eetoSX0C7RWLvZGEBopWOyFGVchI90tfFqV+gO2WiPCtakBRD2wZrG7vCGAK4BKYl7XaBM+MLYcluHD5hpx4R0CMICvBpdzrN9pf1OY3pIy9AW7odhrcc2iwbZmL8K+sAQIA/sKpx3EDvlGVmahZl2c+bIDiAW2j1xSrCadx/FtsxwcNza/gmTCxtGeyYBk3PbR/tlNkD1OjotAvWEl49JS34X6dPi20uLMtoa5g0FFag7bCze/PcTBnA/UwvKQW1zrJ6ow+lgERu0NZboDD/g8c1LcPGCFfxx/UEruJ28IStOVw3jxUDOpuve3xOiBWYFK4qxeLoi4yyixNAEDXRQu0Q4KovlX0G/s9D1F23UWVmoK8zU7qwwglHW7rmD649wpvJfT6/99+DC/k7P5AYX42pwpuqP980hOOvI5RtSA6tSCNNcrTEhu/tHg3Mox+dHVwP8KR8LYvUtjq1KAQQ7cpw9OJu7ugBMYvbbc2+HXYjAP545IOakuz8eScuSF8GijqEyTdoDjY+y+jjnFmcymap2fn9yvA722YMjHyzxeKIMb11pSZll/Yr9xoLH0zzVWCtGzwGMo980+u87oy9wHAd/BRgAUmp93qDEQKQAAAAASUVORK5CYII=" style="height: 23px; width: 23px;float:right">
+               </button>
+            </ion-buttons>
+            <ion-list>
+                <ion-row style="margin-top:20px">
+                    <ion-col style="flex-grow: 0;padding: 0px">
+                        <div class = "numberCircle">
+                          <div text-center>1</div> 
+                        </div>
+                     </ion-col>
+                     <ion-col style="flex-grow: 0;padding: 0px">
+                        <div class = "numberCircle">
+                          <div text-center> 2 </div>
+                        </div>
+                     </ion-col>
+                     <ion-col style="flex-grow: 0;padding: 0px">
+                        <div class = "numberCircle">
+                          <div text-center > 3 </div>
+                        </div>
+                     </ion-col>
+                     <ion-col style="flex-grow: 0;padding: 0px">
+                        <div class = "numberCircle">
+                          <div text-center > 4 </div>
+                        </div>
+                     </ion-col>
+                     <ion-col style="flex-grow: 0;padding: 0px">
+                        <div class = "numberCircle">
+                          <div text-center > 5 </div>
+                        </div>
+                     </ion-col>
+                </ion-row>
+            </ion-list>
+            <td style="padding-top: 25px">
+              SETS<br>1
+            </td>
+            <td style="padding-left: 50px">
+              DRAWID<br>8449
+            </td>
+        </div>
+      </ion-card-content>
       </ion-list>
 
       
