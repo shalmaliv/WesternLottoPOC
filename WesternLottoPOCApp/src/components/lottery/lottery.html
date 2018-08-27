@@ -1,0 +1,33 @@
+<!-- Generated template for the LotteryComponent component -->
+<ion-list>
+     <ion-item-group *ngFor="let lottery of lotteryGames">
+        <ion-list-header class="main-header" (click)="performHeaderClick(lottery.name)">
+            <ion-img src={{lottery.logoSrc}} style="background-color: transparent;" item-start></ion-img>
+            {{lottery.name}}            
+            <ion-icon [name]="lottery.name != selected ? 'ios-arrow-down' :'ios-arrow-up'" item-end></ion-icon>
+        </ion-list-header>        
+
+        <ion-item-group *ngFor="let lotterySub of lottery.lotterySubList" [hidden]="lottery.name != selected">
+            <ion-list-header class="panel-title" [hidden]="lotterySub.name == 'Rapid Games'">      
+                <h2>{{lotterySub.name}}</h2>
+            </ion-list-header>
+
+            <ion-item *ngFor= "let lotteryInner of lotterySub.lotteryList" style="margin:0px"  (click)="performclick()">
+                <ion-img src={{lotteryInner.logoSrc}} style="background-color: transparent; height:40px; width:40px;" item-start></ion-img>
+                <h2><b>{{lotteryInner.name}}</b></h2>
+                <p>{{lotteryInner.description}}</p>
+            </ion-item>
+        </ion-item-group>
+        
+     </ion-item-group>
+  </ion-list>
+  <ion-footer>
+      <ion-row>
+          <ion-col no-padding (click)="refreshPage()">
+              <button no-margin ion-button full large style="background-color: #2a2b55">Lottery Menu</button>
+          </ion-col>
+          <ion-col no-padding (click)="openBetSlipPage()">
+              <button no-margin ion-button full large style="background-color: #2a2b55">Bet Slip</button>
+          </ion-col>
+      </ion-row>
+  </ion-footer>      
