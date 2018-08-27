@@ -5,12 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import{ LotteryDetailPage } from '../pages/lottery-detail/lottery-detail'
+import { SegmentPage } from "../pages/segment/segment";
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  rootPage:any = SegmentPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
