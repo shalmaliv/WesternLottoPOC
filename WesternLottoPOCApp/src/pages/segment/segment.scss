@@ -4,4 +4,10 @@ page-segment {
     .segment-md .segment-button-new {
          height: $segment-button-md-height;
     }
+
+    .toolbar-md {
+        padding :0 !important;
+        min-height: 65px;
+        background:#2a2b55;
+    }
 }
