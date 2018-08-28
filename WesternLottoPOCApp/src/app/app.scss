@@ -14,3 +14,42 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ $segment-button-md-height:55px;
+ $orange-color:#f57f1b;
+ $navigation-bar-color : #2a2b55;
+
+
+    .toolbar-md,.toolbar-ios {
+        padding :0 !important;
+        min-height: 65px;
+    }
+
+    .toolbar-background-md,.toolbar-background-ios  {
+        border-color: #b2b2b2; 
+        background: $navigation-bar-color !important; 
+    }
+
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+      color: white;
+    }
+
+    .segment-md .segment-button-new {
+         height: $segment-button-md-height;
+         background:$orange-color;
+         color:white;
+    }
+
+    .segment-ios .segment-button{
+        border-color: $orange-color;
+        height: $segment-button-md-height;
+        color: $orange-color;
+    }
+
+    .segment-ios .segment-button.segment-activated {
+        color: #fff;
+        background-color: $orange-color;
+    }
+
+    .toolbar-ios .segment-button {
+        line-height: 42px;
+    }

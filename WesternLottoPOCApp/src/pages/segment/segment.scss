@@ -1,7 +1,9 @@
 page-segment {
-    $segment-button-md-height:55px;
 
     .segment-md .segment-button-new {
          height: $segment-button-md-height;
+         background:$orange-color;
+         color:white;
     }
+    
 }

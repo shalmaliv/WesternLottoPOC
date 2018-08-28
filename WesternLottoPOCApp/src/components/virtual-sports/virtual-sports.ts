@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController ,LoadingController} from 'ionic-angular';
 import { Observable } from "rxjs/Observable";
 import { ApiProvider } from "../../providers/api/api";
-import { BetSlipPage } from '../../pages/bet-slip/bet-slip';
 
 
 @Component({
@@ -16,27 +15,10 @@ export class VirtualSportsComponent
   constructor(public navCtrl: NavController, public apiProvider: ApiProvider,public loadingCtrl: LoadingController) 
   {
     const loader = this.loadingCtrl.create({
-      content: "Please Wait"
+      content: "Please Wait",
+      duration:2000    
     });
       loader.present();
       this.films = this.apiProvider.getFilms();
-      loader.dismiss();
   }
-
-  ionViewDidLoad() 
-  {
-    console.log('ionViewDidLoad Virtual Sports Page');
-  }
-
-  refreshPage()
- {
-   console.log('Button Is Clicked')
-   this.ionViewDidLoad()
- }
-
- openBetSlipPage()
- {   
-   this.navCtrl.push(BetSlipPage)
- }
-
 }
