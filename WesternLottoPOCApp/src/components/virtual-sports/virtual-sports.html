@@ -1,0 +1,17 @@
+
+<ion-list>
+  <button ion-item *ngFor="let film of (films | async)?.results">
+    {{ film.title }}
+  </button>
+</ion-list>
+
+<ion-footer>
+  <ion-row>
+      <ion-col no-padding (click)="refreshPage()">
+          <button no-margin ion-button full large style="background-color: #2a2b55">Lottery Menu</button>
+      </ion-col>
+      <ion-col no-padding (click)="openBetSlipPage()">
+          <button no-margin ion-button full large style="background-color: #2a2b55">Bet Slip</button>
+      </ion-col>
+  </ion-row>
+</ion-footer>      
