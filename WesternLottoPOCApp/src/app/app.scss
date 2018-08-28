@@ -17,6 +17,8 @@
  $segment-button-md-height:55px;
  $orange-color:#f57f1b;
  $navigation-bar-color : #2a2b55;
+ $grey-color:#dcdcdc;
+ $payslip-heading-green:green;
 
 
     .toolbar-md,.toolbar-ios {
@@ -58,6 +60,7 @@
          position: absolute !important;
     }
 
+<<<<<<< HEAD
     .toolbar-ios .segment-button{
         font-size: 12px;
     }
@@ -69,3 +72,9 @@
     // .ion-md-arrow-back:hover{
     //     color: #fff;
     // }
+=======
+    .card-ios {
+        margin: 5px;
+        width:auto;
+    }
+>>>>>>> b268d501357869544490844525e27330f825a7c0
