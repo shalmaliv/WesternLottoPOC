@@ -1,16 +1,104 @@
-.numberCircle 
+page-bet-slip
 {
-   width:30px;
-   height:30px;
-   border-radius: 50%;
-   font-size: 15px;
-   background-color: #f47609;
-    color: #fff;
-    text-align: center;
-  padding: 4px
+  .number-Circle 
+  {
+     width:30px;
+     height:30px;
+     border-radius: 50%;
+     font-size: 15px;
+     background-color:$orange-color;
+     color: #fff;
+     text-align: center;
+     padding: 4px
+    }
+  
+  .first-Card-Style
+  {
+    border: 2px solid $orange-color;
+    color: #000;
+    background:$grey-color;
+  }
+    
+  .div-Style
+  {
+    background: white;
+    padding-left: 5px;
+    padding-right: 5px
+  }
+  
+  .card-Content-Style
+  {
+    background: $grey-color;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px
+  }
+  
+  .heading-Style
+  {
+    color: $payslip-heading-green;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline
+  }
+  
+  .column-Style
+  {
+    flex-grow: 0;
+    padding: 0px
   }
 
-  .back-button.show-back-button
+  .cross-Button-Style
   {
-    position: absolute !important;
+    margin-top: 5px;
+    //display: inline;
+    float: right
   }
+
+  .crossButton-Image-Style
+  {
+    height: 23px; 
+    width: 23px;
+    float:right
+  }
+
+  .payNow-Button-Style
+  {
+    font-size: 12px;
+    height: 30px;
+    background-color:$navigation-bar-color;
+    border-radius: 35px;
+    width: 100px;
+    color: #fff;
+  }
+
+  .clearAll-Button-Style
+  {
+    font-size: 12px;
+    height: 25px;
+    background-color:$orange-color;
+    border-radius: 35px;
+    width: 100px;
+    color: #fff;
+  }
+
+  .div-For-BetSlip
+  {
+    height:50px;
+    background-color:#160e2b;
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    font-weight: 700;
+    line-height: 50px
+  }
+
+  .spanStyle-For-ClearButton
+  {
+    float:right;
+    margin-right: 10px;
+    margin-top: -4px
+  }
+}
+

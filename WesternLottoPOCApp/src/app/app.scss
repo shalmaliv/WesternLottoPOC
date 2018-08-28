@@ -17,6 +17,8 @@
  $segment-button-md-height:55px;
  $orange-color:#f57f1b;
  $navigation-bar-color : #2a2b55;
+ $grey-color:#dcdcdc;
+ $payslip-heading-green:green;
 
 
     .toolbar-md,.toolbar-ios {
@@ -56,4 +58,9 @@
 
     .back-button.show-back-button {
          position: absolute !important;
+    }
+
+    .card-ios {
+        margin: 5px;
+        width:auto;
     }
