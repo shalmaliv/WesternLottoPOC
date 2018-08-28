@@ -40,9 +40,9 @@
     }
 
     .segment-ios .segment-button{
-        border-color: $orange-color;
+        border-color: $orange-color !important;
         height: $segment-button-md-height;
-        color: $orange-color;
+        color: white;
     }
 
     .segment-ios .segment-button.segment-activated {
@@ -57,3 +57,15 @@
     .back-button.show-back-button {
          position: absolute !important;
     }
+
+    .toolbar-ios .segment-button{
+        font-size: 12px;
+    }
+
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+         border-color: $orange-color; 
+    }
+
+    // .ion-md-arrow-back:hover{
+    //     color: #fff;
+    // }
