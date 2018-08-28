@@ -17,6 +17,8 @@ import { ApiProvider } from '../providers/api/api';
 import { HttpClientModule } from "@angular/common/http";
 import { SegmentPage } from "../pages/segment/segment";
 import { LotteryComponent } from "../components/lottery/lottery";
+import { VirtualSportsComponent } from "../components/virtual-sports/virtual-sports";
+import { HomeComponent} from "../components/home/home"
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { LotteryComponent } from "../components/lottery/lottery";
     BetSlipPage,
     SegmentPage,
     LotteryDetailPage,
-    LotteryComponent
+    LotteryComponent,
+    VirtualSportsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { LotteryComponent } from "../components/lottery/lottery";
     BetSlipPage,
     SegmentPage, 
     LotteryDetailPage,
-    LotteryComponent
+    LotteryComponent,
+    VirtualSportsComponent,
+    HomeComponent
   ],
   providers: [
     StatusBar,
