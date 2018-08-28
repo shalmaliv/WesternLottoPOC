@@ -1,13 +1,20 @@
 page-segment {
-    $segment-button-md-height:55px;
 
     .segment-md .segment-button-new {
          height: $segment-button-md-height;
+         background:$orange-color;
+         color:white;
     }
 
     .toolbar-md {
         padding :0 !important;
         min-height: 65px;
-        background:#2a2b55;
     }
+
+    .toolbar-background-md  {
+        border-color: #b2b2b2; 
+        background: #2a2b55 !important; 
+    }
+
+    // .toolbar-background-ios
 }

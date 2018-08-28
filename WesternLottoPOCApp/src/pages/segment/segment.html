@@ -1,26 +1,24 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title style="background:#2a2b55">
+  <ion-navbar style="text-align:center;">   
       <img alt="logonew" src="../../assets/imgs/logonew.png" style="height: 50px;" class="center"> 
-    </ion-title>
   </ion-navbar>
 
   <ion-toolbar >
-    <ion-segment [(ngModel)]="mainMenu" style="background:#f57f1b">
-      <ion-segment-button value="home" style="color:white" icon-left class="segment-button-new">
+    <ion-segment [(ngModel)]="mainMenu">
+      <ion-segment-button value="home" icon-left class="segment-button-new">
         <!--<ion-icon name="home"></ion-icon>-->
         <img alt="logonew" class="centre"  src="https://test.westernlotto.ng/assets/images//menu-icons/home.png" style="height: 25px;">
         <div style="margin-top: -20px !important; ">
           HOME
         </div>
       </ion-segment-button>
-      <ion-segment-button value="lottery" style="color:white" icon-left class="segment-button-new">
+      <ion-segment-button value="lottery" icon-left class="segment-button-new">
         <img alt="logonew" class="centre"  src="https://test.westernlotto.ng/assets/images//menu-icons/Lottery.png" style="height: 25px;">
         <div style="margin-top: -20px !important; ">
           LOTTERY
         </div>
       </ion-segment-button>
-      <ion-segment-button value="virtualSports" style="color:white" icon-left class="segment-button-new">
+      <ion-segment-button value="virtualSports" icon-left class="segment-button-new">
         <img alt="logonew" class="centre"  src="https://test.westernlotto.ng/assets/images//menu-icons/Virtual%20Sports.png" style="height: 25px;">
         <div style="margin-top: -20px !important; ">
           VIRTUAL SPORTS
