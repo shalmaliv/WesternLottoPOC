@@ -5,9 +5,9 @@ import { LotteryMainModel } from "../../models/lottery-main-model";
 import { LotteryTypeModel } from "../../models/lottery-type-model";
 
 export const LotteryRapidGames: LotteryModel[] = [
-  { id: 11, name: 'Lotto 5/11', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/pick.png" },
-  { id: 12, name: 'Keno', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/Keno.png" },
-  { id: 13, name: 'Joker', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/Joker-left-logo.png" },
+  { id: 11, name: 'Lotto 5/11', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/pickfive.png" },
+  { id: 12, name: 'Keno', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/keno.png" },
+  { id: 13, name: 'Joker', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/joker_left_logo.png" },
   { id: 14, name: 'Lucky 6', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/default.png" } 
 ];
 
@@ -16,11 +16,11 @@ export const LotteryDailyGames1: LotteryModel[] = [
 ];
 
 export const LotteryDailyGames2: LotteryModel[] = [
-  { id: 16, name: 'UK Lotto', description: 'Next Draw : Thursday, August 16, 2018',logoSrc:"../../assets/imgs/UK_Lotto.png" },
+  { id: 16, name: 'UK Lotto', description: 'Next Draw : Thursday, August 16, 2018',logoSrc:"../../assets/imgs/uk_lotto.png" },
 ];
 
 export const LotteryDailyGames3: LotteryModel[] = [
-  { id: 17, name: 'Euro Million', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/Euromillions.png" },
+  { id: 17, name: 'Euro Million', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/euromillions.png" },
 ];
 
 export const LotteryDailyGames4: LotteryModel[] = [
@@ -32,9 +32,9 @@ export const LotteryDailyGames5: LotteryModel[] = [
   { id: 20, name: 'Western Gold', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/default.png" },
   { id: 21, name: 'Western Kashman', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/default.png" },
   { id: 22, name: 'Western Max', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/default.png" },
-  { id: 23, name: 'Western Option', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/WesternExtra.png" },
-  { id: 24, name: 'Western Power', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/WesternPower.png" },
-  { id: 25, name: 'Western Splash', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/WesternSplash.png" },
+  { id: 23, name: 'Western Option', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/westernwxtra.png" },
+  { id: 24, name: 'Western Power', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/westernpower.png" },
+  { id: 25, name: 'Western Splash', description: 'Next Draw : Friday, August 17, 2018',logoSrc:"../../assets/imgs/westernsplash.png" },
 ];
 
 

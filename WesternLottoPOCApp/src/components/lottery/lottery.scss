@@ -11,12 +11,16 @@ lottery {
 
     .panel-title{
         border-bottom: 1px solid #fdd9bb;        
-        background: url(../../assets/imgs/accordian.png);
+        background:transparent;
         background-repeat: no-repeat;
         border: 0;
         color: white;
         align-content: center !important;
     };
+
+    .list-header-md {    
+        margin-bottom: 0px; 
+    }  
 
     .label-md {
          margin: 0px
