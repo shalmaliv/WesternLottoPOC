@@ -42,9 +42,9 @@
     }
 
     .segment-ios .segment-button{
-        border-color: $orange-color;
+        border-color: $orange-color !important;
         height: $segment-button-md-height;
-        color: $orange-color;
+        color: white;
     }
 
     .segment-ios .segment-button.segment-activated {
@@ -60,7 +60,21 @@
          position: absolute !important;
     }
 
+<<<<<<< HEAD
+    .toolbar-ios .segment-button{
+        font-size: 12px;
+    }
+
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+         border-color: $orange-color; 
+    }
+
+    // .ion-md-arrow-back:hover{
+    //     color: #fff;
+    // }
+=======
     .card-ios {
         margin: 5px;
         width:auto;
     }
+>>>>>>> b268d501357869544490844525e27330f825a7c0
