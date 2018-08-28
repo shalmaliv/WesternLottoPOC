@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import{ HomeComponent} from '../../components/home/home'
 
 /**
  * Generated class for the SegmentPage page.

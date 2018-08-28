@@ -17,6 +17,7 @@ import { ApiProvider } from '../providers/api/api';
 import { HttpClientModule } from "@angular/common/http";
 import { SegmentPage } from "../pages/segment/segment";
 import { LotteryComponent } from "../components/lottery/lottery";
+import { HomeComponent } from '../components/home/home';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LotteryComponent } from "../components/lottery/lottery";
     BetSlipPage,
     SegmentPage,
     LotteryDetailPage,
-    LotteryComponent
+    LotteryComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { LotteryComponent } from "../components/lottery/lottery";
     BetSlipPage,
     SegmentPage, 
     LotteryDetailPage,
-    LotteryComponent
+    LotteryComponent,
+    HomeComponent
   ],
   providers: [
     StatusBar,
