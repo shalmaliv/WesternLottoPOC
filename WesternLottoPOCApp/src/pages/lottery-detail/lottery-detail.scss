@@ -1,33 +1,44 @@
+page-lottery-detail{
 
-// bgimg {
-//     background-image: url('../../assets/imgs/lotterybck.png');
-//     background-size: cover;
-//   }
+    // .toolbar-md {
+    //     padding :0 !important;
+    //     min-height: 65px;
+    // }
 
-  .image {
+    // .toolbar-background-md,.toolbar-background-ios  {
+    //     border-color: #b2b2b2; 
+    //     background: $navigation-bar-color !important; 
+    // }
+
+    // .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+    //   color: white;
+    // }
+
+    .image {
   
-   border: 3px solid #fff;
-   border-radius: 50%;
-   box-shadow: 0 0 5px gray;
-   display: inline-block;
-   margin-left: auto;
-   margin-right: auto;
-}
+        border: 3px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 5px gray;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.circle-pic
-{
-   width:35px;
-   height:35px;
-   -webkit-border-radius: 50%;
-   border-radius: 50%;
-   font-size: 12px;background-color: #f47609; color: #fff;text-align: center;
-   text-align:center;
-   
-}
+    .circle-pic
+    {
+      width:35px;
+      height:35px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 12px;background-color: #f47609; color: #fff;text-align: center;
+      text-align:center;
+      
+    }
 
-.selector {
-  margin-top: 10px;
-  border: solid 2px #e8ebf0;
-  background-color: #ffffff;
-  text-align: center;
+    .selector {
+      margin-top: 10px;
+      border: solid 2px #e8ebf0;
+      background-color: #ffffff;
+      text-align: center;
+    }
 }
