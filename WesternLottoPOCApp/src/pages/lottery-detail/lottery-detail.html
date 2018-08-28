@@ -7,29 +7,31 @@
 
 
 <ion-content>
-   
-        <ion-buttons item-start>
-          <button ion-button icon-only color="royal">
-         
-            <img src="../../assets/imgs/pick.png" style="background-color: transparent; height: 45px; width: 45px;" ng-click="nextpage()" >
-            Lotto 5/11
-          </button>
-        </ion-buttons>
-        
-      
-        <ion-buttons end>
-          <button ion-button icon-only color="royal">
-            <img src="../../assets/imgs/bbb.png" style="background-color: transparent; height: 30px; width: 30px;" ng-click="nextpage()" >
-          </button>
-        </ion-buttons>
-        <ion-buttons end style="color: seagreen">
-            Draw:13554
-            </ion-buttons>
-    
+ 
+  <ion-row style="height: 60px;">
+        <ion-col col-2 class="Absolute-Center">
+            <img class="Absolute-Center" src="../../assets/imgs/pick.png"  ng-click="nextpage()" >
+        </ion-col>
+
+        <ion-col col-3 >
+          <div class="Absolute-Center"><h6 style="float: left;">Lotto 5/11</h6></div>
+        </ion-col>
+
+        <ion-col col-2 offset-2>
+            <img class="Absolute-Center-Img" src="../../assets/imgs/bbb.png"  ng-click="nextpage()" >
+        </ion-col >
+
+        <ion-col col-3 style="color: seagreen">
+          <div class ="Absolute-Center"> Draw:13554</div>
+          </ion-col>
+    </ion-row>
+  
+  <p class="border-class"></p>
+
   <ion-row>
       <ion-col class="col col-33">
           <ion-item no-lines>
-              <h4 style="color: grey; margin-top: 10px;">How to Play</h4>
+              <h4 class="h4-custom">How to Play</h4>
             </ion-item>
         </ion-col>
         <ion-col>
@@ -52,19 +54,19 @@
                 </ion-select>
           </ion-col>
     </ion-row>
-    <p style="border-style: solid;border-width: 1px;border-color:#ccc;margin-top: 0px;margin-bottom: 0px;"></p>
+     <p class="border-class"></p>
 
         <!-- additional key layout -->
         <ion-row>
             <ion-col class="col-25 "></ion-col>
             <ion-col class="col">
-               <button  ion-button round style="font-size: 14px;height: 30px;background-color: #6c0202">AUTO PICK</button>
+               <button  ion-button round class="red-button">AUTO PICK</button>
              </ion-col>
              <ion-col class="col">
-               <button ion-button color="twitter" round style="font-size: 11px;height: 30px;background-color: #406609">ADD TO PAYSLIP</button>
+               <button ion-button color="twitter" round class="green-button">ADD TO PAYSLIP</button>
             </ion-col>
             <ion-col class="col">
-              <img src="../../assets/imgs/loading.png" style="background-color: transparent; height: 25px; width: 25px;margin-top: 5px" ng-click="nextpage()" >
+              <img src="../../assets/imgs/loading.png" class="transp-image" ng-click="nextpage()" >
             </ion-col>
             <ion-col class="col-25 "></ion-col>
         </ion-row>

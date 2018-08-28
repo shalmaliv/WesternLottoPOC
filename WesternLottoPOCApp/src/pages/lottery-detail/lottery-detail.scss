@@ -23,8 +23,49 @@ page-lottery-detail{
 
     .selector {
       margin-top: 10px;
-      border: solid 2px #e8ebf0;
+      border: solid 2px #ffc107;
       background-color: #ffffff;
       text-align: center;
     }
+
+    
+      .Absolute-Center {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .Absolute-Center-Img {
+      margin-top: 10px;
+      float: right;
+  }
+  .border-class{
+    border-style: solid;
+    border-width: 0.5px;;
+    border-color:#e3e3e3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .h4-custom{
+    color: grey; margin-top: 10px;
+  }
+
+  .red-button{
+    font-size: 14px;
+    height: 30px;
+    background-color: #6c0202
+  }
+
+  .green-button{
+    font-size: 11px;
+    height: 30px;
+    background-color: #406609
+  }
+
+  .transp-image{
+    background-color: transparent; 
+    height: 25px; 
+    width: 25px;
+    margin-top: 5px
+  }
 }
