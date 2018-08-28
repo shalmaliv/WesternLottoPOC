@@ -18,6 +18,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { SegmentPage } from "../pages/segment/segment";
 import { LotteryComponent } from "../components/lottery/lottery";
 import { VirtualSportsComponent } from "../components/virtual-sports/virtual-sports";
+import { HomeComponent} from "../components/home/home"
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { VirtualSportsComponent } from "../components/virtual-sports/virtual-spo
     SegmentPage,
     LotteryDetailPage,
     LotteryComponent,
-    VirtualSportsComponent
+    VirtualSportsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { VirtualSportsComponent } from "../components/virtual-sports/virtual-spo
     SegmentPage, 
     LotteryDetailPage,
     LotteryComponent,
-    VirtualSportsComponent
+    VirtualSportsComponent,
+    HomeComponent
   ],
   providers: [
     StatusBar,
