@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TabsPage } from '../pages/tabs/tabs';
+
 import{ LotteryDetailPage } from '../pages/lottery-detail/lottery-detail'
 import { SegmentPage } from "../pages/segment/segment";
 
