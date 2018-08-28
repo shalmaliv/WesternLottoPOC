@@ -17,7 +17,11 @@ import { ApiProvider } from '../providers/api/api';
 import { HttpClientModule } from "@angular/common/http";
 import { SegmentPage } from "../pages/segment/segment";
 import { LotteryComponent } from "../components/lottery/lottery";
+<<<<<<< HEAD
 import { HomeComponent } from '../components/home/home';
+=======
+import { VirtualSportsComponent } from "../components/virtual-sports/virtual-sports";
+>>>>>>> 7c8f913d0f7459c4ff5807a428ae471ba42a54b3
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { HomeComponent } from '../components/home/home';
     SegmentPage,
     LotteryDetailPage,
     LotteryComponent,
+<<<<<<< HEAD
     HomeComponent
+=======
+    VirtualSportsComponent
+>>>>>>> 7c8f913d0f7459c4ff5807a428ae471ba42a54b3
   ],
   imports: [
     BrowserModule,
@@ -50,7 +58,11 @@ import { HomeComponent } from '../components/home/home';
     SegmentPage, 
     LotteryDetailPage,
     LotteryComponent,
+<<<<<<< HEAD
     HomeComponent
+=======
+    VirtualSportsComponent
+>>>>>>> 7c8f913d0f7459c4ff5807a428ae471ba42a54b3
   ],
   providers: [
     StatusBar,
