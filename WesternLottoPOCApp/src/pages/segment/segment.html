@@ -53,17 +53,19 @@
 
 
 <ion-content style="background:#525490;height: 100%;">
-  <div [ngSwitch]="mainMenu">
-    <div *ngSwitchCase="'home'" >
-      <home></home>
-    </div>
+  <ion-grid fixed >    
+      <div [ngSwitch]="mainMenu">
+        <div *ngSwitchCase="'home'" >
+          <home></home>
+        </div>
 
-    <div *ngSwitchCase="'lottery'">
-      <lottery></lottery>
-    </div>
+        <div *ngSwitchCase="'lottery'">
+          <lottery></lottery>
+        </div>
 
-    <div *ngSwitchCase="'virtualSports'">
-      <virtual-sports></virtual-sports>
-    </div>
-  </div>
+        <div *ngSwitchCase="'virtualSports'">
+          <virtual-sports></virtual-sports>
+        </div>
+      </div>      
+  </ion-grid>
 </ion-content>
