@@ -1,6 +1,6 @@
 lottery {
     .main-header{
-        background: #160e2b  !important;
+        background:$sub-title-color  !important;
         color: #fff;
         cursor: pointer;
         margin: 0;
@@ -11,16 +11,12 @@ lottery {
 
     .panel-title{
         border-bottom: 1px solid #fdd9bb;        
-        background:transparent;
+        background: url(../../assets/imgs/accordian.png);
         background-repeat: no-repeat;
         border: 0;
         color: white;
         align-content: center !important;
     };
-
-    .list-header-md {    
-        margin-bottom: 0px; 
-    }  
 
     .label-md {
          margin: 0px
