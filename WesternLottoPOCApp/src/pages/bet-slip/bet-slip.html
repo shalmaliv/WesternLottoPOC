@@ -6,89 +6,90 @@
 
 
 
-<ion-content>
+<ion-content style="background:#525490;height: 100%;">
+  <ion-grid fixed>
     <ion-card class="first-Card-Style">
         <div class="div-For-BetSlip"> 
           <span style="margin-left: 18%;">BETSLIP</span> 
-            <span class="spanStyle-For-ClearButton">
-                <button class="clearAll-Button-Style">Clear All</button>
-              </span>
-        </div>
-      <ion-list>
-        <ion-card-content *ngFor="let film of testlist" class="card-Content-Style">
-        <div class="div-Style">
-          <div item-start class="heading-Style">Lotto 5/11 - Spot 1</div>
-            <ion-buttons class="cross-Button-Style">
-              <button style="float:right;background: white">
-                 <img src="../../assets/imgs/crossimage.png" class="crossButton-Image-Style">
-               </button>
-            </ion-buttons>
-            <ion-list>
-                <ion-row style="margin-top:20px">
-                    <ion-col class="column-Style">
-                        <div class = "number-Circle">
-                          <div text-center>1</div> 
-                        </div>
-                     </ion-col>
-                     <ion-col class="column-Style">
-                        <div class = "number-Circle">
-                          <div text-center> 2 </div>
-                        </div>
-                     </ion-col>
-                     <ion-col class="column-Style">
-                        <div class = "number-Circle">
-                          <div text-center > 3 </div>
-                        </div>
-                     </ion-col>
-                     <ion-col class="column-Style">
-                        <div class = "number-Circle">
-                          <div text-center > 4 </div>
-                        </div>
-                     </ion-col>
-                     <ion-col class="column-Style">
-                        <div class = "number-Circle">
-                          <div text-center > 5 </div>
-                        </div>
-                     </ion-col>
-                </ion-row>
-            </ion-list>
-            <td style="padding-top: 25px">
-              SETS<br>1
-            </td>
-            <td style="padding-left: 50px">
-              DRAWID<br>8449
-            </td>
-        </div>
-      </ion-card-content>
-      </ion-list>
-
-
-      <ion-card-content class="card-Content-Style">
-        <div class="div-Style">
-          <!-- <h2 item-start style="color:black;font-size: 14px;display: inline;">Amount</h2> -->
-        <div style="padding-left:10px">
-          Amount
-          <span style="float:right">
-            1 x <input type="number" style="width:40%;border: 1px solid;padding-top: 2px" value="0"> ₦
+          <span class="spanStyle-For-ClearButton">
+              <button class="clearAll-Button-Style">Clear All</button>
           </span>
         </div>
+        <ion-list>
+            <ion-card-content *ngFor="let film of testlist" class="card-Content-Style">
+            <div class="div-Style">
+              <div item-start class="heading-Style">Lotto 5/11 - Spot 1</div>
+                <ion-buttons class="cross-Button-Style">
+                  <button style="float:right;background: white">
+                     <img src="../../assets/imgs/crossimage.png" class="crossButton-Image-Style">
+                  </button>
+                </ion-buttons>
+                <ion-list>
+                    <ion-row style="margin-top:20px">
+                        <ion-col class="column-Style">
+                            <div class = "number-Circle">
+                              <div text-center>1</div> 
+                            </div>
+                        </ion-col>
+                        <ion-col class="column-Style">
+                            <div class = "number-Circle">
+                              <div text-center> 2 </div>
+                            </div>
+                        </ion-col>
+                        <ion-col class="column-Style">
+                            <div class = "number-Circle">
+                              <div text-center > 3 </div>
+                            </div>
+                        </ion-col>
+                        <ion-col class="column-Style">
+                            <div class = "number-Circle">
+                              <div text-center > 4 </div>
+                            </div>
+                        </ion-col>
+                        <ion-col class="column-Style">
+                            <div class = "number-Circle">
+                              <div text-center > 5 </div>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-list>
+                <td style="padding-top: 25px">
+                  SETS<br>1
+                </td>
+                <td style="padding-left: 50px">
+                  DRAWID<br>8449
+                </td>
+            </div>
+          </ion-card-content>
+        </ion-list>
 
-        <div style="padding-top:10px;padding-left: 10px">
-          Total
-          <span style="float:right;padding-right: 20px">
-            0.00
-          </span>
-        </div>
 
-        <div style="padding-top:20px;padding-left: 10px;height: 55px;">
-          Total ₦0.00
-          <span style="float:right;">
-            <button class="payNow-Button-Style">PAY NOW</button>
-          </span>
-        </div>
+        <ion-card-content class="card-Content-Style">
+          <div class="div-Style">
+            <!-- <h2 item-start style="color:black;font-size: 14px;display: inline;">Amount</h2> -->
+          <div style="padding-left:10px">
+            Amount
+            <span style="float:right">
+              1 x <input type="number" style="width:40%;border: 1px solid;padding-top: 2px" value="0"> ₦
+            </span>
+          </div>
 
-        </div>
-      </ion-card-content>
+          <div style="padding-top:10px;padding-left: 10px">
+            Total
+            <span style="float:right;padding-right: 20px">
+              0.00
+            </span>
+          </div>
 
-  </ion-card>
+          <div style="padding-top:20px;padding-left: 10px;height: 55px;">
+            Total ₦0.00
+            <span style="float:right;">
+              <button class="payNow-Button-Style">PAY NOW</button>
+            </span>
+          </div>
+
+          </div>
+        </ion-card-content>
+    </ion-card>
+  </ion-grid>
  </ion-content>
