@@ -1,0 +1,20 @@
+<!-- Generated template for the ResultComponent component -->
+<ion-grid fixed>
+  <ion-content style="height: 300px;">
+    <ion-card style="color: #000;background: white;height: fit-content;">
+        <div style="height:40px;background-color:#160e2b;text-align: center;font-size: 18px;color:white;font-weight: 450;line-height: 40px"> 
+            RESULT 
+        </div>
+
+        <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
+          Game Type
+        </div>
+        <ion-select [(ngModel)]="GameType" placeholder="Lottery" style="margin-top: 5px;margin-left: 30%;border: solid 1px #ced4da;background-color: #ffffff;text-align: center;border-radius: 20px;height: fit-content;width:40%;font-size: 14px"> 
+            <ion-option value="Lottery">Lottery</ion-option>
+            <ion-option value="VirtualSports">VirtualSports</ion-option>
+            <ion-option value="Sports">Sports</ion-option>
+          </ion-select>
+
+    </ion-card>
+  </ion-content>
+</ion-grid>
