@@ -11,75 +11,73 @@
       <div class ="white-grid">
         <ion-row style="height: 60px;">
               <ion-col col-2 class="Absolute-Center">
-                  <img class="Absolute-Center" src="../../assets/imgs/pickfive.png"  ng-click="nextpage()" >
+                  <img class="Absolute-Center" src="../../assets/imgs/pickfive.png">
               </ion-col>
 
               <ion-col col-3 >
-                <div class="Absolute-Center"><h6 style="float: left;">Lotto 5/11</h6></div>
+                <div class="Absolute-Center"><h6 class="lottery-title">Lotto 5/11</h6></div>
               </ion-col>
 
               <ion-col col-2 offset-2>
-                  <img class="Absolute-Center-Img" src="../../assets/imgs/bbb.png"  ng-click="nextpage()" >
+                  <img class="Absolute-Center-Img" src="../../assets/imgs/bbb.png">
               </ion-col >
 
-              <ion-col col-3 style="color: seagreen">
-                <div class ="Absolute-Center"> Draw:13554</div>
-                </ion-col>
-          </ion-row>
+              <ion-col col-3 >
+                <div class ="Absolute-Center" class="draw-id-class">Draw:13554</div>
+              </ion-col>
+        </ion-row>
   
-          <p class="border-class"></p>
+        <p class="border-class"></p>
 
-          <ion-row>
-              <ion-col class="col col-33">
-                  <ion-item no-lines>
-                    <h4 class="h4-custom">How to Play?</h4>
-                  </ion-item>
-              </ion-col>
-              <ion-col>
-                  <ion-item class="col col-33" no-lines>
-                      <button  class="col col-20" ion-button color="twitter" round>00:09:23</button>
-                      <h5  style="color: firebrick">11.45 AM</h5>
-                  </ion-item>
-              </ion-col> 
-              <ion-col class="col col-33">
-                  <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector"> 
-                      <ion-option value="spot1">spot1</ion-option>
-                      <ion-option value="spot2">spot2</ion-option>
-                      <ion-option value="spot3">spot3</ion-option>
-                      <ion-option value="spot4">spot4</ion-option>
-                      <ion-option value="spot5">spot5</ion-option>
-                      <ion-option value="spot6">spot6</ion-option>
-                      <ion-option value="spot7">spot7</ion-option>
-                      <ion-option value="spot8">spot8</ion-option>
-                  </ion-select>
-              </ion-col>
-          </ion-row>
+        <ion-row>
+            <ion-col class="col col-33">
+                <ion-item no-lines>
+                  <h4 class="h4-custom">How to Play?</h4>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item class="col col-33" no-lines>
+                    <button  class="col col-20" ion-button color="twitter" round style="font-size:15px;height:25px">00:09:23</button>                    
+                </ion-item>
+                <div  class="time-class">11.45 AM</div>
+            </ion-col> 
+            <ion-col class="col col-33">
+                <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector"> 
+                    <ion-option value="spot1">spot1</ion-option>
+                    <ion-option value="spot2">spot2</ion-option>
+                    <ion-option value="spot3">spot3</ion-option>
+                    <ion-option value="spot4">spot4</ion-option>
+                    <ion-option value="spot5">spot5</ion-option>
+                    <ion-option value="spot6">spot6</ion-option>
+                    <ion-option value="spot7">spot7</ion-option>
+                    <ion-option value="spot8">spot8</ion-option>
+                </ion-select>
+            </ion-col>
+        </ion-row>
 
-          <p class="border-class"></p>
+        <p class="border-class"></p>
 
                 <!-- additional key layout -->
-          <ion-row>
-              <ion-col class="col-25 "></ion-col>
-              <ion-col class="col">
-                  <button  ion-button round class="red-button">AUTO PICK</button>
-              </ion-col>
-              <ion-col class="col">
-                  <button ion-button color="twitter" round class="green-button">ADD TO PAYSLIP</button>
-              </ion-col>
-              <ion-col class="col">
-                  <img src="../../assets/imgs/loading.png" class="transp-image" ng-click="nextpage()" >
-              </ion-col>
-              <ion-col class="col-25 "></ion-col>
-          </ion-row>
+        <ion-row class="center-btn-div-container">
+            <ion-col class="col">
+                <button  ion-button round class="red-button">AUTO PICK</button>
+            </ion-col>
+            <ion-col class="col">
+                <button ion-button round class="green-button">ADD TO PAYSLIP</button>
+            </ion-col>
+            <ion-col class="col">
+                <button ion-button round class="yellow-button">RESET</button>
+                <!--<img src="../../assets/imgs/loading.png" class="transp-image" ng-click="nextpage()" >-->
+            </ion-col>
+        </ion-row>
       </div>
-
        
       <div class="number-grid">
           <ion-grid>
               <ion-row *ngFor="let row of grid">
                 <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
                     <div class = "circle-pic image">
-                        <div text-center style="margin-top: 7px">{{number}}</div>
+                        <div text-center class="number-class">{{number}}</div>
                     </div>
                 </ion-col>  
               </ion-row>              

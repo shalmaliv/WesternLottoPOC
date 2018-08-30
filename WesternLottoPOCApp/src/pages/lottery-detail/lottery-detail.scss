@@ -26,7 +26,9 @@ page-lottery-detail{
       background-color: #ffffff;
       text-align: center;
       border-radius: 30px;
-      height: 45px;
+      height: 37px;
+      font-size: 14px;
+      font-weight: bold;
   }
 
     
@@ -52,25 +54,36 @@ page-lottery-detail{
   .h4-custom{
       color: #000; 
       margin-top: 10px;
+      font-size: 15px;
+      font-weight: bold;
   }
 
   .red-button{
-      font-size: 14px;
+      font-size: 12px;
       height: 30px;
-      background-color: #6c0202
+      background-color: $auto-pick-color;
+
   }
 
   .green-button{
-      font-size: 11px;
+      font-size: 12px;
       height: 30px;
-      background-color: #406609;
+      background-color:$add-to-payslip;
+  }
+
+  .yellow-button{
+      font-size: 12px;
+      height: 30px;
+      background-color:$reset-color;
+      color:black;
+      font-weight: bold;
   }
 
   .transp-image{
       background-color: transparent; 
       height: 25px; 
       width: 25px;
-      margin-top: 5px
+      margin-top: 5px;
   }
 
   .select-md .select-placeholder {
@@ -99,6 +112,42 @@ page-lottery-detail{
   .number-grid{
       background-image: url('../../assets/imgs/lotterybck.jpg'); 
       height: calc(100vh - 265px);
+  }
+
+  .lottery-title{
+      float: left;
+      font-size: 16px;
+      font-weight:bold;
+      color:black;
+  }
+
+  .select-md {
+      padding: 7px 22px 5px 27px;
+  }
+
+  .time-class{
+      color: firebrick;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  .center-btn-div-container{
+      margin: auto;
+      text-align: center;
+      padding: 5px;
+  }
+
+  .draw-id-class{
+      margin-top:15px;
+      font-size: 15px;
+      color: seagreen;
+  }
+
+  .number-class{
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: bold;
   }
 
 }
