@@ -39,7 +39,7 @@
                 <ion-item class="col col-33" no-lines>
                     <button  class="col col-20" ion-button color="twitter" round style="font-size:15px;height:25px">00:09:23</button>                    
                 </ion-item>
-                <div  class="time-class">11.45 AM</div>
+                <div  class="time-class">11:45 AM</div>
             </ion-col> 
             <ion-col class="col col-33">
                 <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector"> 
@@ -72,8 +72,8 @@
         </ion-row>
       </div>
        
-      <div class="number-grid">
-          <ion-grid>
+      <div class="number-grid" >
+          <ion-grid style="max-width:75%">
               <ion-row *ngFor="let row of grid">
                 <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
                     <div class = "circle-pic image">
