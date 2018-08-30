@@ -12,6 +12,9 @@ import { SegmentPage } from "../pages/segment/segment";
 import { LotteryComponent } from "../components/lottery/lottery";
 import { VirtualSportsComponent } from "../components/virtual-sports/virtual-sports";
 import { HomeComponent} from "../components/home/home"
+import { CasinoComponent } from "../components/casino/casino"
+import { HelpComponent } from "../components/help/help"
+import { ResultComponent } from "../components/result/result"
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HomeComponent} from "../components/home/home"
     LotteryDetailPage,
     LotteryComponent,
     VirtualSportsComponent,
-    HomeComponent
+    HomeComponent,
+    CasinoComponent,
+    HelpComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,10 @@ import { HomeComponent} from "../components/home/home"
     LotteryDetailPage,
     LotteryComponent,
     VirtualSportsComponent,
-    HomeComponent
+    HomeComponent,
+    CasinoComponent,
+    HelpComponent,
+    ResultComponent
   ],
   providers: [
     StatusBar,
