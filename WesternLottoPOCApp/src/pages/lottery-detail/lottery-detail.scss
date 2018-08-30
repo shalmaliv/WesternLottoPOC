@@ -1,97 +1,104 @@
 page-lottery-detail{
 
-    .image {
-  
-        border: 3px solid #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 5px gray;
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .image {
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 5px gray;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+  }
 
-    .circle-pic
-    {
+  .circle-pic
+  {
       width:35px;
       height:35px;
       -webkit-border-radius: 50%;
       border-radius: 50%;
       font-size: 12px;background-color: #f47609; color: #fff;text-align: center;
       text-align:center;
-      
-    }
+    
+  }
 
-    .selector {
+  .selector {
       margin-top: 10px;
       border: solid 2px #ffc107;
       background-color: #ffffff;
       text-align: center;
       border-radius: 30px;
       height: 45px;
-    }
+  }
 
     
-      .Absolute-Center {
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-    }
+  .Absolute-Center {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+  }
 
-    .Absolute-Center-Img {
+  .Absolute-Center-Img {
       margin-top: 10px;
       float: right;
   }
+
   .border-class{
-    border-style: solid;
-    border-width: 0.5px;;
-    border-color:#e3e3e3;
-    margin-top: 0px;
-    margin-bottom: 0px;
+      border-style: solid;
+      border-width: 0.5px;;
+      border-color:#e3e3e3;
+      margin-top: 0px;
+      margin-bottom: 0px;
   }
+
   .h4-custom{
-    color: #000; 
-    margin-top: 10px;
+      color: #000; 
+      margin-top: 10px;
   }
 
   .red-button{
-    font-size: 14px;
-    height: 30px;
-    background-color: #6c0202
+      font-size: 14px;
+      height: 30px;
+      background-color: #6c0202
   }
 
   .green-button{
-    font-size: 11px;
-    height: 30px;
-    background-color: #406609
+      font-size: 11px;
+      height: 30px;
+      background-color: #406609;
   }
 
   .transp-image{
-    background-color: transparent; 
-    height: 25px; 
-    width: 25px;
-    margin-top: 5px
+      background-color: transparent; 
+      height: 25px; 
+      width: 25px;
+      margin-top: 5px
   }
 
   .select-md .select-placeholder {
-    color: #000;
-    font-size: 14px;
-}
-.white-grid{
-  background-color: white;
-}
+      color: #000;
+      font-size: 14px;
+  }
 
-.col-1half {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 20%;
-  -ms-flex: 0 0 20%;
-  flex: 0 0 20%;
-  width: 20%;
-  max-width: 20%;
-  text-align: center;
-}
+  .white-grid{
+      background-color: white;
+  }
 
-.col-center-align{
-  text-align: center;
-}
+  .col-1half {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      width: 20%;
+      max-width: 20%;
+      text-align: center;
+  }
+
+  .col-center-align{
+      text-align: center;
+  }
+
+  .number-grid{
+      background-image: url('../../assets/imgs/lotterybck.jpg'); 
+      height: calc(100vh - 265px);
+  }
 
 }
