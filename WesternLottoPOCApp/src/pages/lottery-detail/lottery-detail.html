@@ -7,7 +7,7 @@
 
 
 <ion-content style="background:#525490;height: 100%;">
- <ion-grid fixed>
+ <ion-grid class ="white-grid" fixed>
   <ion-row style="height: 60px;">
         <ion-col col-2 class="Absolute-Center">
             <img class="Absolute-Center" src="../../assets/imgs/pickfive.png"  ng-click="nextpage()" >
@@ -71,78 +71,79 @@
             <ion-col class="col-25 "></ion-col>
         </ion-row>
 
-        <ion-row class ="col" style="background-image: url('../../assets/imgs/lotterybck.png'); height: 100%;"> 
+        <!-- <ion-row class ="col" >  -->
             <!-- <img class="col" src="../../assets/imgs/lotterybck.png" > -->
-            <ion-grid>
+            <ion-grid style="background-image: url('../../assets/imgs/lotterybck.png'); height: 100%;">
                 <ion-row>
-                  <ion-col col>
+                  <ion-col col-2 class="col-center-align">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 1 </div>
                       </div>
                    </ion-col>
-                   <ion-col col>
+                   <ion-col col-2 class="col-center-align">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 2 </div>
                       </div>
                    </ion-col>
-                   <ion-col col>
+                   <ion-col col-2 class="col-center-align"> 
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 3 </div>
                       </div>
                    </ion-col>
-                   <ion-col col>
+                   <ion-col col-2 class="col-center-align">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 4 </div>
                       </div>
                    </ion-col>
 
-                   <ion-col col>
+                   <ion-col col-2 class="col-center-align">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 5 </div>
                       </div>
                    </ion-col>
 
-                   <ion-col col>
+                   <ion-col col-2 class="col-center-align">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 6 </div>
                       </div>
                    </ion-col>
-                   <ion-col col>
-                      <div class = "circle-pic image">
-                        <div text-center style="margin-top: 7px"> 7 </div>
-                      </div>
-                   </ion-col>
+                   <!--  -->
 
                 
                 </ion-row>
 
                 <ion-row>
-                    <ion-col class="col " style="text-align: center">
-                        <ion-col col>
+                    <ion-col class="col-1half">
+                           <div class = "circle-pic image">
+                            <div text-center style="margin-top: 7px"> 7 </div>
+                          </div>
+                      </ion-col>
+
+                      <ion-col class="col-1half">
                             <div class = "circle-pic image">
                               <div text-center style="margin-top: 7px"> 8 </div>
                             </div>
-                         </ion-col>
+                        </ion-col>
 
-                       <ion-col col>
+                       <ion-col class="col-1half">
                         <div class = "circle-pic image">
                           <div text-center style="margin-top: 7px"> 9</div>
                         </div>
                      </ion-col>
-                     <ion-col col>
+                     <ion-col class="col-1half">
                       <div class = "circle-pic image">
                         <div text-center style="margin-top: 7px"> 10</div>
                       </div>
                    </ion-col>
-                   <ion-col col>
+                   <ion-col class="col-1half">
                     <div class = "circle-pic image">
                       <div text-center style="margin-top: 7px"> 11</div>
                     </div>
                  </ion-col>
-                     </ion-col>
+                   
 
                   </ion-row>
              </ion-grid>
-        </ion-row>
+        <!-- </ion-row> -->
  </ion-grid>
 </ion-content>
