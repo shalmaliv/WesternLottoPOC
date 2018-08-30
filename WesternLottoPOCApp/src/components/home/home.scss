@@ -5,3 +5,30 @@ home {
 .banner-style{
     height: 18  0px;
 }
+
+.bg{
+    background-color: white;
+    padding: 10px;
+}
+
+.square-image{
+    width: 100px;
+    height: 100px;
+}
+
+.game-div{
+    text-align: center;
+}
+
+.h6-custom{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: $orange-color;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.play-btn{
+    background-color: $navigation-bar-color;
+    height: 30px;
+}
