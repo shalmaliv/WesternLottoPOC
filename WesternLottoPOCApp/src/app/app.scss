@@ -35,6 +35,10 @@
          color:white;
     }
 
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+            border-color: $orange-color;
+    }
+
     .segment-ios .segment-button{
         border-color: $orange-color;
         height: $segment-button-md-height;
