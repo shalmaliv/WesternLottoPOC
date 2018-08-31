@@ -28,7 +28,7 @@ export class LotteryDetailPage {
   
       for (let i = 0; i < this.numberlist.length; i+= this.noOfColsPerRow) { //iterate images
 
-        this.grid[rowNum] = Array(6); //declare elements per row
+        this.grid[rowNum] = Array(this.noOfColsPerRow); //declare elements per row
 
         for(let j = 0; j < this.noOfColsPerRow ;j++){
 
