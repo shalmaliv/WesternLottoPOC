@@ -1,12 +1,8 @@
 <div >
   <ion-slides pager>
 
-    <ion-slide class="banner-style">
-      <img src="../../assets/imgs/bannertwo.png" >
-    </ion-slide>
-
-    <ion-slide class="banner-style">
-      <img src="../../assets/imgs/bannerthree.png" >
+    <ion-slide class="banner-style" *ngFor="let banner of homebannerlist">
+      <img class="full-image" src={{banner.BannerSrc}} >
     </ion-slide>
 
   </ion-slides>

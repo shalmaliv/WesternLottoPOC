@@ -1,4 +1,5 @@
 import { HomeGameList } from "../../models/home-game-list-model";
+import { HomeBanner } from "../../models/home-banner";
 
 
 export const HomePageGamesList: HomeGameList[] = [
@@ -9,4 +10,12 @@ export const HomePageGamesList: HomeGameList[] = [
     { id: 5, name: 'Keno', imgSrc:"../../assets/imgs/Keno.png" }, 
     { id: 6, name: 'Western Extra', imgSrc:"../../assets/imgs/WesternExtra.png" } 
   ];
+
+  export const HomePageBannerList: HomeBanner[] = [
+    { id:1, BannerSrc:"../../assets/imgs/bannertwo.png"},
+    { id:2, BannerSrc:"../../assets/imgs/bannerthree.png"},
+    { id:3, BannerSrc:"../../assets/imgs/bannerfour.png"},
+    { id:4, BannerSrc:"../../assets/imgs/bannerfive.png"}
+
+  ]
   

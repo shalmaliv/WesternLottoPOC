@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import{ HomePageGamesList} from '../home/mock-home'
-
+import { HomePageBannerList} from '../home/mock-home'
 /**
  * Generated class for the HomeComponent component.
  *
@@ -15,6 +15,7 @@ export class HomeComponent {
 
   text: string;
   gamelist = HomePageGamesList;
+  homebannerlist = HomePageBannerList;
 
   constructor() {
     console.log('Hello HomeComponent Component');
