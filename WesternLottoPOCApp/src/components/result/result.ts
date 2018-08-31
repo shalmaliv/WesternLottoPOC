@@ -13,10 +13,17 @@ import { Component } from '@angular/core';
 export class ResultComponent {
 
   text: string;
+  myDate: String;
 
-  constructor() {
+  constructor() 
+  {
     console.log('Hello ResultComponent Component');
     this.text = 'Hello World';
+  }
+
+  ngOnInit()
+  {
+    this.myDate = new Date().toISOString();
   }
 
 }
