@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Calendar } from "@ionic-native/calendar"
 
 /**
  * Generated class for the ResultComponent component.

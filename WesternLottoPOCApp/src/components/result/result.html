@@ -1,59 +1,55 @@
-<!-- Generated template for the ResultComponent component -->
-<ion-grid fixed>
-  <ion-content style="height: 480px;">
-    <ion-card style="color: #000;background: white;height: 95%;border: 2px solid #f57f1b;">
-        <div style="height:40px;background-color:#160e2b;text-align: center;font-size: 18px;color:white;font-weight: 450;line-height: 40px"> 
-            RESULT 
-        </div>
+<ion-card style="color: #000;background: white;height: 95%;border: 2px solid #f57f1b;">
+    <div style="height:40px;background-color:#160e2b;text-align: center;font-size: 18px;color:white;font-weight: 450;line-height: 40px"> 
+        RESULT 
+    </div>
 
-        <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
-          Game Type
-        </div>
-        <ion-col style="padding:0px">
-        <ion-select [(ngModel)]="GameType" placeholder="Lottery" style="margin-top: 5px;margin-left: 30%;border: solid 1px #ced4da;background-color: #ffffff;text-align: center;border-radius: 20px;height: fit-content;width:40%;font-size: 14px"> 
-            <ion-option value="Lottery">Lottery</ion-option>
-            <ion-option value="VirtualSports">Virtual Sports</ion-option>
-            <ion-option value="Sports">Sports</ion-option>
-        </ion-select>
-        </ion-col>
-        
+    <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
+        Game Type
+    </div>
+    <ion-col style="padding:0px">
+    <ion-select [(ngModel)]="GameType" placeholder="Lottery" style="margin-top: 5px;margin-left: 30%;border: solid 1px #ced4da;background-color: #ffffff;text-align: center;border-radius: 20px;height: fit-content;width:40%;font-size: 14px"> 
+        <ion-option value="Lottery">Lottery</ion-option>
+        <ion-option value="VirtualSports">Virtual Sports</ion-option>
+        <ion-option value="Sports">Sports</ion-option>
+    </ion-select>
+    </ion-col>
+    
 
-        <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
-            Game
-        </div>
-        <ion-col style="padding:0px">
-        <ion-select [(ngModel)]="GameName" placeholder="Western Option" style="margin-top: 5px;margin-left: 30%;border: solid 1px #ced4da;background-color: #ffffff;text-align: center;border-radius: 20px;height: fit-content;width:40%;font-size: 14px"> 
-            <ion-option value="Western Option">Western Option</ion-option>
-            <ion-option value="Western Power">Western Power</ion-option>
-            <ion-option value="Western Splash">Western Splash</ion-option>
-        </ion-select>
-        </ion-col>
-        
+    <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
+        Game
+    </div>
+    <ion-col style="padding:0px">
+    <ion-select [(ngModel)]="GameName" placeholder="Western Option" style="margin-top: 5px;margin-left: 30%;border: solid 1px #ced4da;background-color: #ffffff;text-align: center;border-radius: 20px;height: fit-content;width:40%;font-size: 14px"> 
+        <ion-option value="Western Option">Western Option</ion-option>
+        <ion-option value="Western Power">Western Power</ion-option>
+        <ion-option value="Western Splash">Western Splash</ion-option>
+    </ion-select>
+    </ion-col>
+    
 
-        <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
-            From Date
-        </div>
-        <div style="text-align: center;">
-            <ion-item style="margin: auto; width: fit-content;margin-top: 5px">  
-                <ion-datetime style="border: solid 1px #ced4da;border-radius: 25px;padding: 8px 24px;" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" value ></ion-datetime>
-            </ion-item>
-        </div>
+    <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
+        From Date
+    </div>
+    <div style="text-align: center;">
+        <ion-item style="margin: auto; width: fit-content;margin-top: 5px">  
+            <ion-datetime style="border: solid 1px #ced4da;border-radius: 25px;padding: 8px 24px;" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" value ></ion-datetime>
+        </ion-item>
+    </div>
 
-        <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
-            To Date
-        </div>
-        <div style="text-align: center;">
-            <ion-item style="margin: auto; width: fit-content;margin-top: 5px">  
-                <ion-datetime style="border: solid 1px #ced4da;border-radius: 25px;padding: 8px 24px;" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" value ></ion-datetime>
-            </ion-item>
-        </div>
+    <div style="padding-top:20px;font-size:14px;font-weight: 700;text-align: center;font-family: sans-serif">
+        To Date
+    </div>
+    <div style="text-align: center;">
+        <ion-item style="margin: auto; width: fit-content;margin-top: 5px">  
+            <ion-datetime style="border: solid 1px #ced4da;border-radius: 25px;padding: 8px 24px;" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" value ></ion-datetime>
+        </ion-item>
+    </div>
 
-        <div style="text-align:center;padding-top: 20px">
-            <button class="showResultsButtonStyle">SHOW RESULTS</button>
-        </div>
-        
-        
+    <div style="text-align:center;padding-top: 20px">
+        <button class="showResultsButtonStyle">SHOW RESULTS</button>
+    </div>
+    
+    
 
-    </ion-card>
-  </ion-content>
-</ion-grid>
+</ion-card>
+
