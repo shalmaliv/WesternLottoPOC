@@ -1,6 +1,55 @@
 result 
 {
-    .showResultsButtonStyle
+
+    .card-Style
+    {
+        color: #000;
+        background: white;
+        height: 95%;
+        border: 2px solid #f57f1b;
+    }
+
+    .divStyle-For-Result
+    {
+        height:40px;
+        background-color:#160e2b;
+        text-align: center;
+        font-size: 18px;
+        color:white;
+        font-weight: 450;
+        line-height: 40px
+    }
+
+    .divStyle-For-Games
+    {
+        padding-top:20px;
+        font-size:14px;
+        font-weight: 700;
+        text-align: center;
+        font-family: sans-serif
+    }
+
+    .style-For-IonSelect
+    {
+        margin-top: 5px;
+        margin-left: 30%;
+        border: solid 1px #ced4da;
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 20px;
+        height: fit-content;
+        width:40%;
+        font-size: 14px
+    }
+
+    .style-For-Date
+    {
+        border: solid 1px #ced4da;
+        border-radius: 25px;
+        padding: 8px 24px;
+    }
+
+    .showResults-Button-Style
     {
         font-size: 14px;
         height: 30px;
