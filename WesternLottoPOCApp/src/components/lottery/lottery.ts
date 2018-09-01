@@ -33,12 +33,6 @@ export class LotteryComponent {
     console.log('ionViewDidLoad LotteryPage');
   }
 
- refreshPage()
- {
-   console.log('Button Is Clicked')
-   this.ionViewDidLoad()
- }
-
  openBetSlipPage()
  {   
    this.navCtrl.push(BetSlipPage)

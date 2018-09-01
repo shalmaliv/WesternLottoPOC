@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BetSlipPage } from "../../pages/bet-slip/bet-slip";
+
 
 /**
  * Generated class for the LotteryDetailPage page.
@@ -42,4 +44,8 @@ export class LotteryDetailPage {
       }
    }
 
+   openBetSlipPage()
+ {   
+   this.navCtrl.push(BetSlipPage)
+ }
 }
