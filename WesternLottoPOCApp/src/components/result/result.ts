@@ -14,6 +14,7 @@ export class ResultComponent {
 
   text: string;
   myDate: String;
+  myDate1: String;
 
   constructor() 
   {
@@ -24,6 +25,7 @@ export class ResultComponent {
   ngOnInit()
   {
     this.myDate = new Date().toISOString();
+    this.myDate1 = new Date().toISOString();
   }
 
 }
