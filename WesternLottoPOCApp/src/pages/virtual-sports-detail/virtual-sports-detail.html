@@ -1,0 +1,53 @@
+<!--
+  Generated template for the VirtualSportsDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-row class="show-back-btn">
+      <ion-col col-8>
+          <ion-title class="center-align">{{pagename}}</ion-title>
+      </ion-col>
+      <ion-col col-4>
+          <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector"> 
+              <ion-option value="spot1"> 11:29 AM</ion-option>
+              <ion-option value="spot2"> 12:32 PM</ion-option>
+              <ion-option value="spot3"> 12:35 PM</ion-option>
+              <ion-option value="spot4"> 01:38 PM</ion-option>
+              <ion-option value="spot5"> 01:41 PM</ion-option>
+              <ion-option value="spot6"> 01:44 PM</ion-option>
+              <ion-option value="spot7"> 01:47 PM</ion-option>
+              <ion-option value="spot8"> 01:50 PM</ion-option>
+              <ion-option value="spot8"> 01:53 PM</ion-option>
+              <ion-option value="spot8"> 01:56 PM</ion-option>
+              <ion-option value="spot8"> 01:59 PM</ion-option>
+
+          </ion-select>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <ion-row class="orange-bar">
+        <ion-col col-6 class="no-padding">ID : 12156 02:14 Silva VS Chan </ion-col>
+        <ion-col col-2 class="no-padding" offset-4>PLAY</ion-col>
+      </ion-row>
+      <ion-row class="full-width">
+          <iframe class="full-width" src="https://kiron.streamamg.com/035/archery-mi9tzcdwft13j6r91lcn.html">
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+      </ion-row>
+
+      <ion-row>
+          <ion-list class="full-width">
+              <ion-item *ngFor= "let virtualgame of sportslist" style="margin:0px"  (click)="performclick()">
+                    <h2><b>{{virtualgame.name}}</b></h2>
+                </ion-item>
+            
+           </ion-list>
+      </ion-row>
+</ion-content>

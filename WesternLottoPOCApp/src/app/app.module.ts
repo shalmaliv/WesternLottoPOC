@@ -15,6 +15,7 @@ import { HomeComponent} from "../components/home/home"
 import { CasinoComponent } from "../components/casino/casino"
 import { HelpComponent } from "../components/help/help"
 import { ResultComponent } from "../components/result/result"
+import { VirtualSportsDetailPage } from '../pages/virtual-sports-detail/virtual-sports-detail';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ResultComponent } from "../components/result/result"
     HomeComponent,
     CasinoComponent,
     HelpComponent,
-    ResultComponent
+    ResultComponent,
+    VirtualSportsDetailPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,9 @@ import { ResultComponent } from "../components/result/result"
     HomeComponent,
     CasinoComponent,
     HelpComponent,
-    ResultComponent
+    ResultComponent,
+    VirtualSportsDetailPage
+
   ],
   providers: [
     StatusBar,

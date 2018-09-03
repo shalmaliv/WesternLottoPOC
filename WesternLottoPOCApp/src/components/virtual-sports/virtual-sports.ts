@@ -3,6 +3,7 @@ import { NavController ,LoadingController} from 'ionic-angular';
 import { Observable } from "rxjs/Observable";
 import { ApiProvider } from "../../providers/api/api";
 import { VirtualSportsListing} from '../virtual-sports/virtual-sports-mock'
+import {VirtualSportsDetailPage} from '../../pages/virtual-sports-detail/virtual-sports-detail'
 
 
 @Component({
@@ -21,4 +22,10 @@ export class VirtualSportsComponent
   //     loader.present();
   //     this.films = this.apiProvider.getFilms();
   }
+
+  performclick(name){
+    let self = this;
+
+    self.navCtrl.push(VirtualSportsDetailPage, {pagename : name});
+}
 }
