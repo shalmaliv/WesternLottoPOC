@@ -25,7 +25,9 @@ export class LotteryComponent {
   //   console.log('Hello LotteryComponent Component');
 
   // }
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) 
+  {
+
   }
 
   ionViewDidLoad() 
@@ -38,19 +40,29 @@ export class LotteryComponent {
    this.navCtrl.push(BetSlipPage)
  }
 
- performclick(){
+ performclick(name)
+ {
+      console.log('Lottery Name is',name);
       let self = this;
-      self.navCtrl.push(LotteryDetailPage)
+      self.navCtrl.push(LotteryDetailPage,{
+        name
+      });
  }
 
- performHeaderClick(name){
+ performHeaderClick(name)
+ {
     let self = this;
 
-    if(self.selected != name){
+    if(self.selected != name)
+    {
         self.selected = name;
-    }else if(name == 'RAPID GAMES'){
+    }
+    else if(name == 'RAPID GAMES')
+    {
        self.selected = 'DAILY GAMES';
-    }else if(name == 'DAILY GAMES'){
+    }
+    else if(name == 'DAILY GAMES')
+    {
        self.selected = 'RAPID GAMES';
     }
  }

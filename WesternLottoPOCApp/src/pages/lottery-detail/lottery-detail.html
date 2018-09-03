@@ -42,7 +42,7 @@
                 <div  class="time-class">11:45 AM</div>
             </ion-col> 
             <ion-col class="col col-33">
-                <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector"> 
+                <ion-select [(ngModel)]="Type" placeholder="spot 1" class="col col-30 selector" [hidden]="lotteryNameFromLottery == 'Joker'"> 
                     <ion-option value="spot1">spot1</ion-option>
                     <ion-option value="spot2">spot2</ion-option>
                     <ion-option value="spot3">spot3</ion-option>
@@ -58,7 +58,7 @@
         <p class="border-class"></p>
 
                 <!-- additional key layout -->
-        <ion-row class="center-btn-div-container">
+        <ion-row class="center-btn-div-container" [hidden]="lotteryNameFromLottery == 'Joker'">
             <ion-col class="col">
                 <button  ion-button round class="red-button">AUTO PICK</button>
             </ion-col>
@@ -72,7 +72,7 @@
         </ion-row>
       </div>
        
-      <div class="number-grid" >
+      <div class="number-grid" [hidden]="lotteryNameFromLottery == 'Joker'" >
           <ion-grid >
               <ion-row *ngFor="let row of grid">
                 <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
@@ -83,6 +83,24 @@
               </ion-row>              
           </ion-grid>
       </div>
+
+      <ion-card class="card-Style">
+        <div class="divStyle-For-Result"> 
+            PICK ONE CARD 
+        </div>
+
+        <ion-grid >
+            <ion-row *ngFor="let row of grid">
+              <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
+                  <div class = "circle-pic image">
+                      <div text-center class="number-class">{{number}}</div>
+                  </div>
+              </ion-col>  
+            </ion-row>              
+        </ion-grid>
+
+      </ion-card>
+
  </ion-grid>
  <ion-footer style="position:fixed;">
     <ion-row>

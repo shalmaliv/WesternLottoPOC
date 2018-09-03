@@ -12,7 +12,7 @@
                 <h2>{{lotterySub.name}}</h2>
             </ion-list-header>
 
-            <ion-item *ngFor= "let lotteryInner of lotterySub.lotteryList" style="margin:0px"  (click)="performclick()">
+            <ion-item *ngFor= "let lotteryInner of lotterySub.lotteryList" style="margin:0px"  (click)="performclick(lotteryInner.name)">
                 <ion-img src={{lotteryInner.logoSrc}} style="background-color: transparent; height:40px; width:40px;" item-start></ion-img>
                 <h2><b>{{lotteryInner.name}}</b></h2>
                 <p>{{lotteryInner.description}}</p>
