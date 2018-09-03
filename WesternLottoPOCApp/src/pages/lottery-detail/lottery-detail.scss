@@ -114,6 +114,10 @@ page-lottery-detail{
       height: calc(100vh - 265px);
   }
 
+  .joker-grid{
+      background-image: url('../../assets/imgs/lotterybck.jpg'); 
+  }
+
   .lottery-title{
       float: left;
       font-size: 16px;
@@ -154,7 +158,7 @@ page-lottery-detail{
   .divStyle-For-Result
     {
         height:40px;
-        background-color:#160e2b;
+        background-color:$header-color;
         text-align: center;
         font-size: 18px;
         color:white;
@@ -165,9 +169,19 @@ page-lottery-detail{
     .card-Style
     {
         color: #000;
-        background: white;
-        height: 95%;
-        border: 2px solid #f57f1b;
+        background: transparent;
+        margin : 10px 0px 0px 0px;
+        width: 100% ;
     }
+
+    .card-md {
+       // margin: 10px;
+        border-radius: 2px;
+        //width: calc(100% - 20px);
+       // font-size: 1.4rem;
+        -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.12); 
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.12); 
+    }
+
 
 }

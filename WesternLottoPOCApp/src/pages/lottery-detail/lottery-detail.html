@@ -72,6 +72,7 @@
         </ion-row>
       </div>
        
+      
       <div class="number-grid" [hidden]="lotteryNameFromLottery == 'Joker'" >
           <ion-grid >
               <ion-row *ngFor="let row of grid">
@@ -84,24 +85,50 @@
           </ion-grid>
       </div>
 
-      <ion-card class="card-Style">
-        <div class="divStyle-For-Result"> 
-            PICK ONE CARD 
-        </div>
+      <div class="joker-grid"  [hidden]="lotteryNameFromLottery != 'Joker'">
+        <ion-card class="card-Style">
+            <div class="divStyle-For-Result"> 
+                PICK ONE CARD 
+            </div>
 
-        <ion-grid >
-            <ion-row *ngFor="let row of grid">
-              <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
-                  <div class = "circle-pic image">
-                      <div text-center class="number-class">{{number}}</div>
-                  </div>
-              </ion-col>  
-            </ion-row>              
-        </ion-grid>
+            <ion-grid fixed>
+                <ion-row >
+                    <ion-col col-2 class="col-center-align" *ngFor="let card of jokerOneCardList">
+                        <img alt="logonew" src="{{card}}" style="height: 70px;width:55px" class="center"> 
+                    </ion-col>  
+                </ion-row>              
+            </ion-grid>
+        </ion-card>
 
-      </ion-card>
+        <ion-card class="card-Style">
+            <div class="divStyle-For-Result"> 
+                PICK CORRECT FACE 
+            </div>
 
+            <ion-grid fixed>
+                <ion-row >
+                    <ion-col col-2 class="col-center-align" *ngFor="let card of pickCorrectFaceList">
+                        <img alt="logonew" src="{{card}}" style="height: 70px;width:55px" class="center"> 
+                    </ion-col>  
+                </ion-row>              
+            </ion-grid>
+        </ion-card>
+        <ion-card class="card-Style">
+            <div class="divStyle-For-Result"> 
+                PICK CORRECT SUIT 
+            </div>
+
+            <ion-grid fixed>
+                <ion-row >
+                    <ion-col col-2 class="col-center-align" *ngFor="let card of pickCorrectSuitList">
+                        <img alt="logonew" src="{{card}}" style="height: 70px;width:55px" class="center"> 
+                    </ion-col>  
+                </ion-row>              
+            </ion-grid>
+        </ion-card>
+      </div>
  </ion-grid>
+</ion-content>
  <ion-footer style="position:fixed;">
     <ion-row>
         <ion-col no-padding (click)="openBetSlipPage()">
@@ -109,4 +136,3 @@
         </ion-col>
     </ion-row>
 </ion-footer>
-</ion-content>

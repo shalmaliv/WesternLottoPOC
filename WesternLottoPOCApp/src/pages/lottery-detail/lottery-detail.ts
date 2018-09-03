@@ -20,7 +20,10 @@ export class LotteryDetailPage {
   grid=[];
   noOfColsPerRow = 6;
   lotteryNameFromLottery : any;
-  
+  jokerOneCardList = ["../../assets/imgs/jd.png","../../assets/imgs/jh.png","../../assets/imgs/js.png","../../assets/imgs/jc.png","../../assets/imgs/qd.png","../../assets/imgs/qh.png","../../assets/imgs/qs.png","../../assets/imgs/qc.png","../../assets/imgs/kd.png","../../assets/imgs/kh.png","../../assets/imgs/ks.png","../../assets/imgs/ks.png","../../assets/imgs/joker.png"];
+  pickCorrectFaceList = ["../../assets/imgs/face_img_one.png","../../assets/imgs/face_img_two.png","../../assets/imgs/face_img_three.png"];
+  pickCorrectSuitList = ["../../assets/imgs/suit_img_three.png","../../assets/imgs/suit_img_two.png","../../assets/imgs/suit_img_four.png","../../assets/imgs/suit_img_one.png"];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) 
   {
       this.lotteryNameFromLottery = navParams.data.name;
@@ -46,10 +49,13 @@ export class LotteryDetailPage {
         }        
         rowNum++; //go on to the next row
       }
+
+
+
    }
 
    openBetSlipPage()
- {   
-   this.navCtrl.push(BetSlipPage)
- }
+   {   
+      this.navCtrl.push(BetSlipPage)
+   }
 }
