@@ -19,13 +19,17 @@ export class LotteryDetailPage {
   numberlist = ["1","2","3","4","5","6","7","8","9","10","11"];
   grid=[];
   noOfColsPerRow = 6;
+  lotteryNameFromLottery : any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) 
+  {
+      this.lotteryNameFromLottery = navParams.data.name;
   }
 
   ionViewDidLoad() {
       console.log('ionViewDidLoad LotteryDetailPage');
-      debugger;
+      console.log('Name retrieved is ', this.lotteryNameFromLottery);
+      
       let rowNum = 0; //counter to iterate over the rows in the grid
   
       for (let i = 0; i < this.numberlist.length; i+= this.noOfColsPerRow) { //iterate images
