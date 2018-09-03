@@ -2,7 +2,7 @@
 <ion-list>
   <!-- <button ion-item *ngFor="let film of (films | async)?.results"> -->
    
-    <button class="blue-btn" ion-item *ngFor="let virtualgame of virtualgames">
+    <button class="blue-btn" ion-item *ngFor="let virtualgame of virtualgames" (click)="performclick(virtualgame.name)">
         <ion-row>
             <ion-col col-1 class="center-align">
                 <img class="center-image" src={{virtualgame.imgSrc}}>
