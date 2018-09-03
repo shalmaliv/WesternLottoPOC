@@ -1,7 +1,17 @@
 
 <ion-list>
-  <button ion-item *ngFor="let film of (films | async)?.results">
-    {{ film.title }}
+  <!-- <button ion-item *ngFor="let film of (films | async)?.results"> -->
+   
+    <button class="blue-btn" ion-item *ngFor="let virtualgame of virtualgames">
+        <ion-row>
+            <ion-col col-1 class="center-align">
+                <img class="center-image" src={{virtualgame.imgSrc}}>
+            </ion-col>
+            <ion-col col-1 class="center-align">
+                {{ virtualgame.name }}
+            </ion-col>
+          </ion-row>
+   
   </button>
 </ion-list>
 
