@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {VirtualGameSingleItem} from './virtual-sports-mock'
 
 /**
  * Generated class for the VirtualSportsDetailPage page.
@@ -16,7 +15,8 @@ import {VirtualGameSingleItem} from './virtual-sports-mock'
 })
 export class VirtualSportsDetailPage {
   pagename : any;
-  sportslist = VirtualGameSingleItem;
+  IsVideoVisible: boolean = true;
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pagename = navParams.get('pagename');
@@ -26,4 +26,11 @@ export class VirtualSportsDetailPage {
     console.log('ionViewDidLoad VirtualSportsDetailPage');
   }
 
+  playVideo(){
+    if(this.IsVideoVisible == true){
+        this.IsVideoVisible = false;
+    }else{
+      this.IsVideoVisible = true;
+    }
+  }
 }

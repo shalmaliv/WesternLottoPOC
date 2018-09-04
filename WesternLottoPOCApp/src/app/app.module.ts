@@ -16,6 +16,7 @@ import { CasinoComponent } from "../components/casino/casino"
 import { HelpComponent } from "../components/help/help"
 import { ResultComponent } from "../components/result/result"
 import { VirtualSportsDetailPage } from '../pages/virtual-sports-detail/virtual-sports-detail';
+import { VsarcherycompComponent } from '../components/vsarcherycomp/vsarcherycomp';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { VirtualSportsDetailPage } from '../pages/virtual-sports-detail/virtual-
     CasinoComponent,
     HelpComponent,
     ResultComponent,
-    VirtualSportsDetailPage
+    VirtualSportsDetailPage,
+    VsarcherycompComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { VirtualSportsDetailPage } from '../pages/virtual-sports-detail/virtual-
     CasinoComponent,
     HelpComponent,
     ResultComponent,
-    VirtualSportsDetailPage
+    VirtualSportsDetailPage,
+    VsarcherycompComponent
 
   ],
   providers: [

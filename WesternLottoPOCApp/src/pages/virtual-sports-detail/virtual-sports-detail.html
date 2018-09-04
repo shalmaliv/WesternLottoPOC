@@ -34,21 +34,16 @@
     <ion-grid fixed>
         <ion-row class="orange-bar">
             <ion-col col-6 class="no-padding">ID : 12156 02:14 Silva VS Chan </ion-col>
-            <ion-col col-2 class="no-padding" offset-4>PLAY</ion-col>
+            <ion-col col-2 class="no-padding" offset-4 (click)="playVideo()" [hidden]="IsVideoVisible == true">PLAY</ion-col>
+            <ion-col col-2 class="no-padding" offset-4 (click)="playVideo()" [hidden]="IsVideoVisible == false">STOP</ion-col>
+
         </ion-row>
-        <ion-row class="full-width">
+        <ion-row class="full-width" [hidden]="IsVideoVisible == false">
             <iframe class="full-width" src="https://kiron.streamamg.com/035/archery-mi9tzcdwft13j6r91lcn.html">
                 <p>Your browser does not support iframes.</p>
             </iframe>
         </ion-row>
 
-        <ion-row>
-            <ion-list class="full-width">
-                <ion-item *ngFor= "let virtualgame of sportslist" style="margin:0px"  (click)="performclick()">
-                        <h2><b>{{virtualgame.name}}</b></h2>
-                    </ion-item>
-                
-            </ion-list>
-        </ion-row>
+        <vsarcherycomp></vsarcherycomp>
     </ion-grid>
 </ion-content>

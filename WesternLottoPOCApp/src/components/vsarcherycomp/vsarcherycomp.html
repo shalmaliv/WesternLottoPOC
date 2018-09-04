@@ -1,0 +1,46 @@
+<!-- Generated template for the VsarcherycompComponent component -->
+<ion-row>
+  <ion-list class="full-width" [hidden]="Isdetailpageopened == true">
+      <ion-item *ngFor= "let virtualgame of sportslist ; let i = index"  style="margin:0px"  (click)="click_menu(i)">
+              <h2 class ="float-left" ><b>{{virtualgame.name}}</b></h2>
+              <img class ="arrow-image" src="../../assets/imgs/right_arrow.png">
+          </ion-item>
+      
+  </ion-list>
+  
+  <ion-list class="full-width" [hidden]="Isdetailpageopened == false" >
+    <ion-row>
+      <ion-item (click)="backpressed()">BACK</ion-item>
+    </ion-row>
+    <ion-item  class="single-row" style="margin:0px"  >
+            <!-- <ion-row *ngIf="i%2 == 0; then thenBlock else elseBlock"> -->
+              <!-- first col  -->
+              <ion-row>
+             <ion-col col-6 *ngFor= "let singlegame of singlegamedetail ; let i = index"> 
+              
+                    <ion-col>
+                        {{singlegame.name}}
+                    </ion-col>
+                    <ion-col>
+                       <button class="btn-border">{{singlegame.value}}</button>
+                      </ion-col>
+               
+           </ion-col> 
+          </ion-row>
+                <!-- second column -->
+               <!-- <ion-col col #elseBlock>
+                  <ion-row>
+                      <ion-col col>
+                          {{singlegame.name}}
+                      </ion-col>
+                      <ion-col col>
+                          {{singlegame.value}}
+                        </ion-col>
+                  </ion-row>
+                </ion-col> -->
+
+
+            <!-- </ion-row> -->
+        </ion-item>
+</ion-list>
+</ion-row>

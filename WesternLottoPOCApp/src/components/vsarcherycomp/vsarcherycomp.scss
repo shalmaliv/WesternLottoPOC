@@ -1,0 +1,22 @@
+vsarcherycomp {
+    .arrow-image{
+        line-height: 20px;
+    height: 23px;
+    margin-left: 5px;
+    float: right;
+    }
+
+    .single-row{
+        background: $navigation-bar-color;
+        color: white;
+    }
+
+    .btn-border{
+        background: #2a2b55;
+    height: 30px;
+    color: white;
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #f57f1b;
+    }
+}
