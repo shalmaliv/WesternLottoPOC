@@ -15,7 +15,7 @@
               </ion-col>
 
               <ion-col col-3 >
-                <div class="Absolute-Center"><h6 class="lottery-title">Lotto 5/11</h6></div>
+                <div class="Absolute-Center"><h6 class="lottery-title">{{lotteryNameFromLottery}}</h6></div>
               </ion-col>
 
               <ion-col col-2 offset-2>
@@ -74,7 +74,7 @@
        
       
       <div class="number-grid" [hidden]="lotteryNameFromLottery == 'Joker'" >
-          <ion-grid >
+          <ion-grid class="number-grid-bg">
               <ion-row *ngFor="let row of grid">
                 <ion-col col-2 class="col-center-align" *ngFor="let number of row" [hidden]="number == -1" >
                     <div class = "circle-pic image">

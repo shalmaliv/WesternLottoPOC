@@ -110,8 +110,11 @@ page-lottery-detail{
   }
 
   .number-grid{
-      background-image: url('../../assets/imgs/lotterybck.jpg'); 
       height: calc(100vh - 265px);
+  }
+
+  .number-grid-bg{
+    background-image: url('../../assets/imgs/lotterybck.jpg'); 
   }
 
   .joker-grid{
